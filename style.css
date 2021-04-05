@@ -10,11 +10,13 @@ html {
 
 }
 
-a {color: royalblue; }
-a:hover {color: lightblue; }
+a {color: orange; }
+a:hover {color: purple; }
 
 body {
 	max-width: 850px;
+	text-align: center;
+	padding: 30px;
 	background-color: black;
 	color: white;
 	border: 5px solid white;
