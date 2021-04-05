@@ -1,32 +1,38 @@
 html {
-	max-width: 1050px;
-	margin-left: auto;
-	margin-right: auto;
-	margin-top: 30px;
-	color: #333;
-	padding-bottom: 200px;
-	font-family: "monospace";
-	font-color: "white"
-
+    max-width: 1050px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    color: #333;
+    padding-bottom: 200px;
+    font-family: "monospace";
 }
 
-a {color: orange; }
-a:hover {color: purple; }
+a {
+    color: orange;
+}
+
+a:hover {
+    color: purple;
+}
 
 body {
-	max-width: 850px;
-	text-align: center;
-	padding: 30px;
-	background-color: black;
-	color: white;
-	border: 5px solid white;
-}	
-.entry {
-	border-left: 10px solid darkslategray;
-	padding: 0px 10px 0px 10px;
-	border-radius: 0 30px 30px 0;
-	margin-bottom: 20px;
-	background-color: #eee;
-	}
+    max-width: 950px;
+    text-align: center;
+    padding: 30px;
+    background-color: black;
+    color: white;
+    border: 5px solid white;
+}
 
-.entry h2 { margin: 5px auto 2px auto; }
+.entry {
+    border-left: 10px solid darkslategray;
+    padding: 0px 10px 0px 10px;
+    border-radius: 0 30px 30px 0;
+    margin-bottom: 20px;
+    background-color: black;
+}
+
+.entry h2 {
+    margin: 5px auto 2px auto;
+}
