@@ -5,11 +5,18 @@ html {
 	margin-top: 30px;
 	color: #333;
 	padding-bottom: 200px;
-	 }
+	font-family: "monospace";
+	font-color: "white"
+}
 
 a {color: royalblue; }
 a:hover {color: lightblue; }
 
+body {
+	background-color: black;
+	color: white;
+
+}
 .entry {
 	border-left: 10px solid darkslategray;
 	padding: 0px 10px 0px 10px;
