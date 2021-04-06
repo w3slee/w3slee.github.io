@@ -9,12 +9,13 @@ html {
 }
 
 a {
-    color: orange;
+    color: white;
+    font-family: monospace;
     text-decoration: none;
 }
 
 a:hover {
-    color: purple;
+    color: palevioletred;
 }
 
 body {
@@ -61,4 +62,9 @@ p {
 .htext {
     background-color: yellow;
     color: black;
+}
+
+small {
+    font-family: monospace;
+    color: lime;
 }
