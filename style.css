@@ -82,3 +82,7 @@ small {
     font-family: monospace;
     text-align: center;
 }
+
+.feedArticles {
+    text-align: center;
+}
