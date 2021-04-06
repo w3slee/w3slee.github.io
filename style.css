@@ -102,3 +102,11 @@ li {
     float: left;
     list-style: none;
 }
+
+li a {
+    display: block;
+    color: deepskyblue;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
