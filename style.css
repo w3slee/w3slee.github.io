@@ -26,17 +26,32 @@ body {
 }
 
 .entry {
-    border-left: 10px soh1d red;
-    margin-bottom: 20px;
-    background-color: white;
-    border-width: 10px;
+    background: #222;
+    border: 1px solid lime;
+    border-radius: 20px;
+    padding: 20px;
+    margin: 30px;
 }
 
 .entry h2 {
     margin: 5px auto 2px auto;
 }
 
-h2 {
+h1 {
     font-style: bold;
-    font-weight: lighter;
+}
+
+pre {
+    background: #222;
+    border: 1px solid lime;
+    border-radius: 20px;
+    padding: 20px;
+    margin: 30px;
+}
+
+code {
+    background: #222;
+    color: lime;
+    border-radius: 5px;
+    overflow-wrap: break-word;
 }
