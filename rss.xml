@@ -3,8 +3,8 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 
 <channel>
-<title>Your RSS Feed Title</title>
-<description>A brief description of your RSS feed.</description>
+<title>tekxted feed</title>
+<description>programming, hacking, electronics blog & msc goodies.</description>
 <language>en-us</language>
 <link>https://w3slee.github.io/rss.xml</link>
 <atom:link href="https://w3slee.github.io/rss.xml" rel="self" type="application/rss+xml" />
@@ -12,14 +12,26 @@
 <!-- LB -->
 
 <item>
-<title>socials in the terminal, best of RSS with newsboat</title>
-<guid>https://lukesmith.xyz/2021.html#socials-in-the-terminal-best-of-rss-with-newsboat</guid>
-<pubDate>Tue, 06 Apr 2021 05:27:05 -0400</pubDate>
+<title>Automating Dating App Swipes</title>
+<guid>https://lukesmith.xyz/2021.html#automating-dating-app-swipes</guid>
+<pubDate>Tue, 06 Apr 2021 02:25:51 -0400</pubDate>
 <description><![CDATA[
-<p>
-Spending too much time 'surfing' and you are capable of using linux ? Well waste no more time. If you are a sucker for minimal software and text based user interfaces turn you on then newsboar is for you. A simple terminal application that updates  and relays your subscibed RSS feeds in the terminal. Real blogs and articles straight from the command line. The setup is also childs play as you only need to append the rss feed url in the ~/url config file located in ~/,config/newsboat/url or ~/.newsboat/url depending on where newsboat is installed.
 
-</p>
+]]></description>
+</item>
+
+
+
+
+<item>
+<title>automating-human-interaction</title>
+<guid>https://lukesmith.xyz/2021.html#automatinghumaninteraction</guid>
+<pubDate>Tue, 06 Apr 2021 08:34:50 -0400</pubDate>
+<description><![CDATA[
+ <p>
+         We've all tried dating apps even if it's with a psudo account. Most of them now emulate one common structure in which the app interacts with the user. After successfull sacrifice of your personal information , you will be required to swipe left / right,
+	         tap on a love icon if a profile you've come across peaks your interest :-) . And cross or vice versa if you don't like a profile. Due to desperation or 'time' almost everyone swipes right on any profile quickly to pass the whole reading a profile's
+		         bio and shit like that. What if you got a badoo premium subscribtion for a week and want to maximise the 'unlimited' swipes you get after paying <code>$1<code>
 ]]></description>
 </item>
 
@@ -54,20 +66,6 @@ This was a pretty short , sweet and sad story to the developers of the mobile lo
 
 
 
-<item>
-<title>Automating Dating App Swipes</title>
-<guid>https://w3slee.github.io/2021.html#automating-dating-app-swipes</guid>
-<pubDate>Tue, 06 Apr 2021 02:25:51 -0400</pubDate>
-<description><![CDATA[
-<pre>
-We've all tried dating apps even if it's with a psudo account. Most of them now emulate one common structure in which the app interacts with the user. 
-After successfull sacrifice of your personal information , you will be required to swipe left / right, tap on a love icon if a profile you've come across peaks your interest :-) . And cross or vice versa if you don't like a profile. Due to desperation or 'time' almost everyone swipes right on any profile quickly to pass the whole reading a profile's bio and shit like that.
-
-What if you got a badoo premium subscribtion for a week and want to maximise the 'unlimited' swipes
-you get after paying <code>$1<code>
-</pre>
-]]></description>
-</item>
 
 
 
