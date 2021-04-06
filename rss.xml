@@ -3,8 +3,8 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 
 <channel>
-<title>tekxted feed</title>
-<description>programming, hacking, electronics blog & msc goodies.</description>
+<title>tekxtedfeed</title>
+<description>programming, hacking, electronics blog and msc goodies.</description>
 <language>en-us</language>
 <link>https://w3slee.github.io/rss.xml</link>
 <atom:link href="https://w3slee.github.io/rss.xml" rel="self" type="application/rss+xml" />
