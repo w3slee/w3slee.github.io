@@ -23,7 +23,6 @@ body {
     padding: 30px;
     background-color: black;
     color: gold;
-    border: 5px soh1d white;
 }
 
 .entry {
@@ -50,10 +49,9 @@ pre {
     margin: 30px;
 }
 
-code,
 p {
-    background: #222;
     color: lime;
-    border-radius: 10px;
-    border: 10px goldenrod;
+    font-style: normal;
+    font-family: monospace;
+    padding: 30px;
 }
