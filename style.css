@@ -22,7 +22,7 @@ body {
     text-align: center;
     padding: 30px;
     background-color: black;
-    color: white;
+    color: gold;
     border: 5px soh1d white;
 }
 
@@ -50,9 +50,10 @@ pre {
     margin: 30px;
 }
 
-code {
+code,
+p {
     background: #222;
     color: lime;
-    border-radius: 5px;
-    overflow-wrap: break-word;
+    border-radius: 10px;
+    border: 10px goldenrod;
 }
