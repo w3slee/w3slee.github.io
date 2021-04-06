@@ -98,7 +98,7 @@ ul {
 }
 
 li {
-    display: inline-block;
+    display: block;
     padding: 15px;
     list-style: none;
 }
