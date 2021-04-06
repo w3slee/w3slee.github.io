@@ -57,7 +57,7 @@ p {
     font-style: normal;
     font-family: monospace;
     padding: 20px;
-    font-size: 18px;
+    font-size: 16px;
 }
 
 .htext {
@@ -67,12 +67,13 @@ p {
 
 small {
     font-family: monospace;
-    color: black;
+    color: white;
     padding: 5px;
     font-weight: bold;
+    display: block;
 }
 
-.footer {
+footer {
     position: fixed;
     left: 0;
     bottom: 0;
@@ -84,5 +85,20 @@ small {
 }
 
 .feedArticles {
+    text-align: left;
+}
+
+.navbar {
     text-align: center;
+}
+
+ul {
+    text-align: left;
+    width: 450px;
+}
+
+li {
+    display: inline-block;
+    padding: 15px;
+    list-style: none;
 }
