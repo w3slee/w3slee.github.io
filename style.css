@@ -13,6 +13,7 @@ a {
     font-family: monospace;
     text-decoration: none;
     font-size: 16px;
+    display: block;
 }
 
 a:hover {
@@ -96,12 +97,10 @@ footer {
 ul {
     text-align: left;
     width: 450px;
-    margin: 0;
-    padding: 0;
 }
 
 li {
-    display: block;
+    display: inline;
     padding: 15px;
     list-style: none;
 }
