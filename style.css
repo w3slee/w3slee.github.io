@@ -90,23 +90,15 @@ footer {
 
 .navbar {
     text-align: center;
-    list-style: none;
 }
 
 ul {
     text-align: left;
+    width: 450px;
 }
 
 li {
+    display: inline-block;
     padding: 15px;
-    float: left;
     list-style: none;
-}
-
-li a {
-    display: block;
-    color: deepskyblue;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
 }
