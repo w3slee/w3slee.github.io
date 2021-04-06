@@ -12,6 +12,24 @@
 <!-- LB -->
 
 <item>
+<title>30 seconds to find an android bug</title>
+<guid>https://w3slee.github.io/2021.html#30-seconds-to-find-an-android-bug</guid>
+<pubDate>Tue, 06 Apr 2021 03:33:59 -0400</pubDate>
+<description><![CDATA[
+<h1>
+30 seconds to find an android bug
+</h1>
+
+<p>
+Exposed firebase database, the impact of this vulnerabilitity is unauthenticated read/write access to your apps database potentially risking the data of clients if their is any.
+
+These are unfortunate scenes from a Kenyan loan app. This type of approach can be used to find quick bugs that the developers forget to fix due to either pending deadlines or problems in the development pipeline. We've all experienced the <h1 class="htext">pressure</h1>
+</p>
+]]></description>
+</item>
+
+
+<item>
 <title>Automating Dating App Swipes</title>
 <guid>https://w3slee.github.io/2021.html#automating-dating-app-swipes</guid>
 <pubDate>Tue, 06 Apr 2021 02:25:51 -0400</pubDate>
