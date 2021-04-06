@@ -66,5 +66,18 @@ p {
 
 small {
     font-family: monospace;
-    color: lime;
+    color: red;
+    padding: 5px;
+    font-weight: lighter;
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: yellow;
+    color: black;
+    font-family: monospace;
+    text-align: center;
 }
