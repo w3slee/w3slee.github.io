@@ -99,7 +99,6 @@ ul {
 }
 
 li {
-    display: inline;
     padding: 15px;
-    list-style: none;
+    float: left;
 }
