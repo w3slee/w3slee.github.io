@@ -11,5 +11,21 @@
 
 <!-- LB -->
 
+<item>
+<title>ADB - pro utitlies and features</title>
+<guid>https://w3slee.github.io/2021.html#adb-pro-utitlies-and-features</guid>
+<pubDate>Wed, 07 Apr 2021 09:46:34 -0400</pubDate>
+<description><![CDATA[
+<p>
+When talking to people about adb, most of them don't realise that it goes beyond the installing application via the terminal perk.
+
+ADB ( Android Debug Bridge ) provides state of the art features sets, i'll write about what commands i mostly use and why you should
+
+use them too.
+</p>
+]]></description>
+</item>
+
+
 </channel>
 </rss>

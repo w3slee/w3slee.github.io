@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 html {
     max-width: 1050px;
     margin-left: auto;
@@ -49,18 +50,22 @@ pre {
 }
 
 h1 {
-    color: goldenrod;
-    font-size: 14px;
+    color: ;
+    font-size: 35px;
     font-variant: monospace;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Bebas Neue', cursive;
 }
 
 p {
-    color: white;
+    color: whitesmoke;
     font-style: normal;
     font-family: monospace;
     padding: 15px;
-    font-size: 15px;
+    text-align: left;
+    /* background: #222; */
+    background: #0E6655;
+    border: 1px solid white;
+    font-size: 16px;
 }
 
 .htext {
