@@ -11,22 +11,6 @@
 
 <!-- LB -->
 
-<item>
-<title>ADB - usefull adb commands for automation</title>
-<guid>https://w3slee.github.io/2021.html#adb-usefull-adb-commands-for-automation</guid>
-<pubDate>Wed, 07 Apr 2021 03:23:29 -0400</pubDate>
-<description><![CDATA[
-<p> 
-
-ADB - useful commands 
-
-<h1> flashing OTA (over the air) updates </h1>
-
-<pre> adb sideload ota_file.zip </pre>
-
-</p>
-]]></description>
-</item>
 
 
 
