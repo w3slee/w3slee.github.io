@@ -89,19 +89,19 @@ footer {
     text-align: left;
 }
 
-.navbar {
-    text-align: center;
+div#navbar_div ul li {
+    text-align: left;
+    display: block;
 }
 
-
-/* ul {
+ul {
     text-align: left;
 }
 
 li {
     display: inline-block;
     list-style: none;
-} */
+}
 
 .lball {
     font-size: 500px;
@@ -110,12 +110,6 @@ li {
 
 mark {
     background-color: #FF5733;
-}
-
-ul li #listentry {
-    display: inline-block;
-    list-style: none;
-    text-align: left;
 }
 
 code {
