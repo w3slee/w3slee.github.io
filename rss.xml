@@ -11,10 +11,12 @@
 
 <!-- LB -->
 
+
+
 <item>
-<title>ADB - pro utitlies and features</title>
-<guid>https://w3slee.github.io/2021.html#adb-pro-utitlies-and-features</guid>
-<pubDate>Wed, 07 Apr 2021 09:46:34 -0400</pubDate>
+<title>ADB - KING OF ANDROID PRO TOOLS</title>
+<guid>https://w3slee.github.io/2021.html#adb-king-of-android-pro-tools</guid>
+<pubDate>Wed, 07 Apr 2021 10:04:49 -0400</pubDate>
 <description><![CDATA[
 <p>
 When talking to people about adb, most of them don't realise that it goes beyond the installing application via the terminal perk.
@@ -25,6 +27,8 @@ use them too.
 </p>
 ]]></description>
 </item>
+
+
 
 
 </channel>
