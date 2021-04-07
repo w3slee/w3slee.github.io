@@ -12,6 +12,18 @@
 <!-- LB -->
 
 <item>
+<title>ADB - the swiss army knife for android</title>
+<guid>https://w3slee.github.io/2021.html#adb-the-swiss-army-knife-for-android</guid>
+<pubDate>Wed, 07 Apr 2021 07:01:50 -0400</pubDate>
+<description><![CDATA[
+<p>
+automating common useful tasks with android is easy, due to the variety of tools found in the system
+</p>
+]]></description>
+</item>
+
+
+<item>
 <title>Android ADB automation</title>
 <guid>https://w3slee.github.io/2021.html#android-adb-automation</guid>
 <pubDate>Wed, 07 Apr 2021 06:40:52 -0400</pubDate>
