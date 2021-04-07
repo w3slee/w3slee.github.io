@@ -1,4 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@viewport {
+    width: device-width;
+    zoom: 1.0;
+}
+
+@media only screen and (max-width: 900px) {
+    img {
+        width: 100%;
+    }
+    body {
+        font-size: 19px;
+    }
+}
+
 html {
     max-width: 1050px;
     margin-left: auto;
@@ -7,13 +21,15 @@ html {
     color: #333;
     padding-bottom: 200px;
     font-family: "monospace";
+    /*  attribute: https://i.redd.it/je1hmocr0x161.jpg */
+    background-image: url("imgs/bg.png");
 }
 
 a {
     color: #39CCCC;
     font-family: monospace;
     text-decoration: none;
-    font-size: 16px;
+    font-size: 18px;
 }
 
 a:hover {
@@ -151,9 +167,69 @@ footer#homefoot {
 
 h2 {
     font-family: 'Bebas Neue', cursive;
-    font-size: 18px;
+    font-size: 30px;
 }
 
 a#weblinks {
     color: black;
+}
+
+section {
+    float: relative;
+}
+
+aside {
+    float: right;
+    margin: 0 0% 24px 1.5%;
+}
+
+div#DigitalCLOCK {
+    color: whitesmoke;
+    font-style: normal;
+    font-family: monospace;
+    padding: 15px;
+    text-align: left;
+    /* background: #222; */
+    background: #0E6655;
+    border: 1px solid white;
+    font-size: 16px;
+}
+
+
+/* .blob {
+    background: black;
+    border-radius: 10px;
+    margin: 10px;
+    height: 20px;
+    width: 20px;
+    box-shadow: 0 0 0 0 rgb(21, 67, 64);
+    transform: scale(1);
+    animation: pulse 2s infinite;
+} 
+
+
+/* @keyframes pulse {
+    0% {
+        transform: scale(0.95);
+        box-shadow: 2 2 0 0 rgb(17, 47, 65);
+    }
+    70% {
+        transform: scale(1);
+        box-shadow: 0 0 0 10px rgb(8, 35, 53);
+    }
+    100% {
+        transform: scale(0.95);
+        box-shadow: 0 0 0 0 rgb(15, 15, 38);
+    }
+} */
+
+.clock {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    color: #ff4747;
+    font-size: 60px;
+    font-family: 'Righteous', cursive;
+    letter-spacing: 7px;
 }

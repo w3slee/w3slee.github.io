@@ -11,22 +11,32 @@
 
 <!-- LB -->
 
-
-
 <item>
 <title>ADB - KING OF ANDROID PRO TOOLS</title>
 <guid>https://w3slee.github.io/2021.html#adb-king-of-android-pro-tools</guid>
 <pubDate>Wed, 07 Apr 2021 10:04:49 -0400</pubDate>
 <description><![CDATA[
-<p>
-When talking to people about adb, most of them don't realise that it goes beyond the installing application via the terminal perk.
 
-ADB ( Android Debug Bridge ) provides state of the art features sets, i'll write about what commands i mostly use and why you should
-
-use them too.
-</p>
 ]]></description>
 </item>
+
+
+<item>
+<title></title>
+<guid>https://w3slee.github.io/2021.html#adb-pro-utitlies-and-features</guid>
+<pubDate>Wed, 07 Apr 2021 14:03:12 -0400</pubDate>
+<description><![CDATA[
+
+]]></description>
+</item>
+
+
+
+
+
+
+
+
 
 
 
