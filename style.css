@@ -135,3 +135,16 @@ footer#homefoot {
     font-family: monospace;
     font-size: 16px;
 }
+
+::selection {
+    color: #DE2514;
+    background-color: #0F1314;
+}
+
+
+/* for firefox */
+
+::moz-selection {
+    color: #DE2514;
+    background-color: #0F1314;
+}
