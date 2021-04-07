@@ -12,6 +12,31 @@
 <!-- LB -->
 
 <item>
+<title>Android ADB automation</title>
+<guid>https://w3slee.github.io/2021.html#android-adb-automation</guid>
+<pubDate>Wed, 07 Apr 2021 06:40:52 -0400</pubDate>
+<description><![CDATA[
+<p>
+Lately i've been having fun with the ultimate android swiss tool, ADB ( android debug bridge ).
+You can access it on android via USB or WiFi.
+
+ADB can allow a user to perform device backups, capture screenshots, screencapture, manipulate files, install and unistall software ...and many more useful functions.
+
+<h2> performing a full system backup </h2>
+
+<pre> 
+adb shell backup -f [backup_name].ab -apk -all
+</pre>
+
+
+</p>
+]]></description>
+</item>
+
+
+
+
+<item>
 <title>Using ADB to automate dating app swipes 🏂</title>
 <guid>https://w3slee.github.io/2021.html#using-adb-to-automate-dating-app-swipes</guid>
 <pubDate>Wed, 07 Apr 2021 01:34:50 -0400</pubDate>
