@@ -40,10 +40,6 @@ body {
     margin: 5px auto 2px auto;
 }
 
-h1 {
-    font-style: lighter;
-}
-
 pre {
     background: #222;
     border: 1px solid lime;
