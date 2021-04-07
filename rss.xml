@@ -11,69 +11,6 @@
 
 <!-- LB -->
 
-<item>
-<title>Android Automation with ADB</title>
-<guid>https://w3slee.github.io/2021.html#android-automation-with-adb</guid>
-<pubDate>Wed, 07 Apr 2021 03:39:46 -0400</pubDate>
-<description><![CDATA[
-
-<h2>adb shell screenrecord</h2>
-
-<mark> adb shell screenrecord /sdcard/test.mp4 </mark>
-
-<pre>Records the device's display to a .mp4 file</pre>
-
-<mark> adb pull /sdcard/test.mp4 </mark>
-
-<pre> Download test.mp4 file from Android Device.</pre>
-
-<mark> adb shell screenrecord [options] <filename></mark>
-
-
-<h2> Options: </h2>
-
-
-<mark> --size WIDTHxHEIGHT </mark>
-
-<pre>
-  Set the video size, e.g. "1280x720". Default is the device's main
-
-  display resolution (if supported), 1280x720 if not. For best results,
-
-  use a size supported by the AVC encoder.
-  </pre>
-
-
-  <mark> --bit-rate RATE </mark>
-
-  <pre>
-  Set the video bit rate, in bits per second. Value may be specified as
-
-  bits or megabits, e.g. '4000000' is equivalent to '4M'. Default 20Mbps.
-  </pre>
-
-
-  <mark> --bugreport </mark>
-
-  <pre>
-  Add additional information, such as a timestamp overlay, that is helpful
-
-  in videos captured to illustrate bugs.
-  </pre>
-
-
-  <mark> --time-limit TIME </mark>
-
-  <pre>
-  Set the maximum recording time, in seconds. Default / maximum is 180.
-  </pre>
-
-
-  <mark> --verbose </mark>
-
-  Display interesting information on stdout.
-]]></description>
-</item>
 
 
 
