@@ -87,6 +87,17 @@ footer {
     text-align: center;
 }
 
+footer#bar_nav ul li a {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: yellow;
+    color: black;
+    font-family: monospace;
+    text-align: center;
+}
+
 .feedArticles {
     text-align: left;
 }
