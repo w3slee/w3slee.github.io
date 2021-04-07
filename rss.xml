@@ -12,6 +12,77 @@
 <!-- LB -->
 
 <item>
+<title>ADB - L33T commands
+ADB - L33t commands</title>
+<guid>https://w3slee.github.io/2021.html#adb-l33t-commands</guid>
+<pubDate>Wed, 07 Apr 2021 02:44:45 -0400</pubDate>
+<description><![CDATA[
+<h1>adb shell screenrecord</h1>
+
+<code>
+adb shell screenrecord /sdcard/test.mp4
+</code>
+
+<p>Records the device's display to a .mp4 file</p>
+
+
+
+
+<code>
+	adb pull /sdcard/test.mp4
+</code>
+
+<p>Download test.mp4 file from Android Device.</p>
+
+
+<code>adb shell screenrecord [options] <filename></code>
+
+<pre>
+<p>
+Options:
+
+
+--size WIDTHxHEIGHT
+
+  Set the video size, e.g. "1280x720". Default is the device's main
+
+  display resolution (if supported), 1280x720 if not. For best results,
+
+  use a size supported by the AVC encoder.
+
+
+
+--bit-rate RATE
+
+  Set the video bit rate, in bits per second. Value may be specified as
+
+  bits or megabits, e.g. '4000000' is equivalent to '4M'. Default 20Mbps.
+
+
+
+--bugreport
+
+  Add additional information, such as a timestamp overlay, that is helpful
+
+  in videos captured to illustrate bugs.
+
+
+
+--time-limit TIME
+
+  Set the maximum recording time, in seconds. Default / maximum is 180.
+
+
+
+--verbose
+
+  Display interesting information on stdout.
+</p><pre>
+]]></description>
+</item>
+
+
+<item>
 <title>Using ADB to automate dating app swipes 🏂</title>
 <guid>https://w3slee.github.io/2021.html#using-adb-to-automate-dating-app-swipes</guid>
 <pubDate>Wed, 07 Apr 2021 01:34:50 -0400</pubDate>
