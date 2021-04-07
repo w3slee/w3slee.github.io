@@ -111,3 +111,7 @@ li {
 mark {
     background-color: #FF5733;
 }
+
+#listentry {
+    max-width: 650px;
+}
