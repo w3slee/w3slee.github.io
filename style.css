@@ -93,14 +93,15 @@ footer {
     text-align: center;
 }
 
-ul {
+
+/* ul {
     text-align: left;
 }
 
 li {
     display: inline-block;
     list-style: none;
-}
+} */
 
 .lball {
     font-size: 500px;
@@ -111,8 +112,10 @@ mark {
     background-color: #FF5733;
 }
 
-#listentry {
-    max-width: 650px;
+ul li #listentry {
+    display: inline-block;
+    list-style: none;
+    text-align: left;
 }
 
 
