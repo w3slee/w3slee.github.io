@@ -11,6 +11,19 @@
 
 <!-- LB -->
 
+<item>
+<title>ADB - Utilities Worth Your Time</title>
+<guid>https://w3slee.github.io/2021.html#adb-utilities-worth-your-time</guid>
+<pubDate>Wed, 07 Apr 2021 08:51:35 -0400</pubDate>
+<description><![CDATA[
+<p> 
+ADB is an underatted tool that has very feature rich capabilities. From perfoming full system backups,<br> uninstalling / installing android apps <br> booting an android into Recovery , Download or Fastboot mode <br> usefull during custom ROM  flashing.
+</p>
+<h1> perfoming full device backup </h1>
+]]></description>
+</item>
+
+
 
 
 
