@@ -102,3 +102,12 @@ li {
     padding: 15px;
     list-style: none;
 }
+
+.lball {
+    font-size: 500px;
+    text-align: center;
+}
+
+mark {
+    background-color: #FF5733;
+}
