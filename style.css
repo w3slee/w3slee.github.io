@@ -77,11 +77,9 @@ small {
 }
 
 footer {
-    position: fixed;
     left: 0;
     bottom: 0;
     width: 100%;
-    background-color: yellow;
     color: black;
     font-family: monospace;
     text-align: center;
@@ -132,5 +130,6 @@ code {
     color: black;
 }
 
-
-/*!emojicursor.app*/
+img {
+    text-align: center;
+}
