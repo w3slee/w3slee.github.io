@@ -151,4 +151,9 @@ footer#homefoot {
 
 h2 {
     font-family: 'Bebas Neue', cursive;
+    font-size: 18px;
+}
+
+a#weblinks {
+    color: black;
 }
