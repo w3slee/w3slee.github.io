@@ -6,20 +6,17 @@ html {
     color: #333;
     padding-bottom: 200px;
     font-family: "monospace";
-    cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='30' height='38' viewport='0 0 100 100' style='fill:black;font-size:24px;'><text y='50%'>🤔</text></svg>") 16 0, auto;
 }
 
 a {
-    color: white;
+    color: deepskyblue;
     font-family: monospace;
     text-decoration: none;
-    font-size: 18px;
-    /*!emojicursor.app*/
+    font-size: 16px;
 }
 
 a:hover {
-    color: orange;
-    /* cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:24px;'><text y='50%'>🔥</text></svg>") 16 0, auto; */
+    color: palevioletred;
 }
 
 body {
@@ -50,16 +47,7 @@ h1 {
 pre {
     background: #222;
     border: 1px solid lime;
-    padding: 20px;
-    margin: 30px;
-    font-size: 16px;
-    font-family: 'Courier New', Courier, monospace;
-    color: white;
-}
-
-pre.p2 {
-    background: #222;
-    border: 1px solid lime;
+    border-radius: 20px;
     padding: 20px;
     margin: 30px;
 }
@@ -85,24 +73,12 @@ small {
     display: block;
 }
 
-div footer {
+footer {
     position: fixed;
     left: 0;
     bottom: 0;
     width: 100%;
-    font-size: 16px;
-    color: purple;
-    font-family: monospace;
-    text-align: center;
-    background-color: black;
-}
-
-footer#bar_nav {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    background-color: purple;
+    background-color: yellow;
     color: black;
     font-family: monospace;
     text-align: center;
@@ -112,48 +88,17 @@ footer#bar_nav {
     text-align: left;
 }
 
-div#navbar_div ul li {
-    text-align: left;
-    display: block;
-    padding: 3px;
-}
-
-div#navbar_div a {
-    color: white;
-    font-size: 16px;
-    margin: 10px;
-    padding: 10px;
-}
-
-div.c1 li.c2 {
-    color: white;
+.navbar {
+    text-align: center;
 }
 
 ul {
     text-align: left;
+    width: 450px;
 }
 
 li {
     display: inline-block;
+    padding: 15px;
     list-style: none;
-}
-
-.lball {
-    font-size: 500px;
-    text-align: center;
-}
-
-mark {
-    background-color: whitesmoke;
-}
-
-code {
-    background: #DAF7A6;
-    border: 1px solid #FFC300;
-    font-family: monospace;
-    color: black;
-}
-
-img {
-    text-align: center;
 }

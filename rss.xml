@@ -3,7 +3,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 
 <channel>
-<title>💡 RSS</title>
+<title>w3srss</title>
 <description>subscribe to my rss feed for latest updates.</description>
 <language>en-us</language>
 <link>https://w3slee.github.io/rss.xml</link>
@@ -11,5 +11,4 @@
 
 <!-- LB -->
 
-</channel>
-</rss>
+
