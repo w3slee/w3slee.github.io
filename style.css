@@ -123,3 +123,10 @@ div#sweetnav {
     display: block;
     text-align: left;
 }
+
+footer#homefoot {
+    background-color: yellow;
+    position: fixed;
+    font-family: monospace;
+    font-size: 16px;
+}
