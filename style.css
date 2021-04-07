@@ -6,6 +6,7 @@ html {
     color: #333;
     padding-bottom: 200px;
     font-family: "monospace";
+    cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:24px;'><text y='50%'>🤔</text></svg>") 16 0, auto;
 }
 
 a {
@@ -94,12 +95,10 @@ footer {
 
 ul {
     text-align: left;
-    width: 450px;
 }
 
 li {
     display: inline-block;
-    padding: 15px;
     list-style: none;
 }
 
@@ -116,7 +115,5 @@ mark {
     max-width: 650px;
 }
 
-cursor:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:24px;'><text y='50%'>🙌</text></svg>") 16 0,
-auto;
 
 /*!emojicursor.app*/
