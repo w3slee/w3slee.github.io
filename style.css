@@ -50,7 +50,7 @@ pre {
 }
 
 h1 {
-    color: ;
+    color: goldenrod;
     font-size: 35px;
     font-variant: monospace;
     font-family: 'Bebas Neue', cursive;
@@ -138,7 +138,7 @@ footer#homefoot {
 
 ::selection {
     color: #DE2514;
-    background-color: #0F1314;
+    background-color: #19461A;
 }
 
 
@@ -147,4 +147,8 @@ footer#homefoot {
 ::moz-selection {
     color: #DE2514;
     background-color: #0F1314;
+}
+
+h2 {
+    font-family: 'Bebas Neue', cursive;
 }
