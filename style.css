@@ -48,6 +48,10 @@ pre {
     margin: 30px;
 }
 
+h1 {
+    color: #39CCCC;
+}
+
 p {
     color: white;
     font-style: normal;
@@ -91,10 +95,12 @@ footer {
 ul {
     text-align: left;
     width: 450px;
+    color: white;
 }
 
 li {
     display: inline-block;
     padding: 15px;
     list-style: none;
+    color: white;
 }

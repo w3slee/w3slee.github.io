@@ -12,6 +12,29 @@
 <!-- LB -->
 
 <item>
+<title>ADB - usefull commands and utilites</title>
+<guid>https://w3slee.github.io/2021.html#adb-usefull-commands-and-utilites</guid>
+<pubDate>Wed, 07 Apr 2021 08:17:28 -0400</pubDate>
+<description><![CDATA[
+<p>
+Over the past few days I've made some changes to <a href="">mutt-wizard</a>.
+I was always fearing feature bloat, and it was getting to the point that to install a single email address, you had to it through like 5 or 6 questions asking if you wanted to limit the number of offline emails you wanted to keep or if you had a Protonmail account, etc.
+</p>
+
+<p>
+I've now released a version that uses command-line options.
+You can manually specify options, or if mutt-wizard cannot determine them, only then will you be prompted for them.
+</p>
+
+<p>
+In the simplest case, to add an email, just run: <code>mw -a luke@lukesmith.xyz</code> and that's it.
+If you use my <a href="">emailwiz</a> to setup your own email server, that system uses a system login, so you'll have to specify your user login with <code>-u</code> as well: <code>mw -a luke@lukesmith.xyz -u luke</code> but that's it.
+</p>
+]]></description>
+</item>
+
+
+<item>
 <title>ADB - fun times with the ultimate android tool</title>
 <guid>https://w3slee.github.io/2021.html#adb-fun-times-with-the-ultimate-android-tool</guid>
 <pubDate>Wed, 07 Apr 2021 08:08:28 -0400</pubDate>
