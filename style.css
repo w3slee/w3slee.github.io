@@ -91,7 +91,7 @@ div footer {
     bottom: 0;
     width: 100%;
     font-size: 16px;
-    color: black;
+    color: purple;
     font-family: monospace;
     text-align: center;
     background-color: black;
@@ -102,7 +102,7 @@ footer#bar_nav {
     left: 0;
     bottom: 0;
     width: 100%;
-    background-color: black;
+    background-color: purple;
     color: black;
     font-family: monospace;
     text-align: center;
