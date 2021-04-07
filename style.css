@@ -87,13 +87,14 @@ footer {
     text-align: center;
 }
 
-.feedArticles {
+
+/* .feedArticles {
     text-align: left;
 }
 
 .navbar {
     text-align: center;
-}
+} */
 
 ul {
     text-align: left;
@@ -106,4 +107,19 @@ li {
     padding: 15px;
     list-style: none;
     color: white;
+}
+
+h1#stitle {
+    font-size: 60px;
+}
+
+div#postlist {
+    text-align: left;
+    display: block;
+    padding: 20px;
+}
+
+div#sweetnav {
+    display: block;
+    text-align: left;
 }

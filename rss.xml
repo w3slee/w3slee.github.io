@@ -3,35 +3,13 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 
 <channel>
-<title>w3srss</title>
-<description>subscribe to my rss feed for latest updates.</description>
+<title>mchinenFeed</title>
+<description>subscribe for latets updates on posts.</description>
 <language>en-us</language>
 <link>https://w3slee.github.io/rss.xml</link>
 <atom:link href="https://w3slee.github.io/rss.xml" rel="self" type="application/rss+xml" />
 
 <!-- LB -->
 
-<item>
-<title>ADB - Utilities Worth Your Time</title>
-<guid>https://w3slee.github.io/2021.html#adb-utilities-worth-your-time</guid>
-<pubDate>Wed, 07 Apr 2021 08:51:35 -0400</pubDate>
-<description><![CDATA[
-<p> 
-ADB is an underatted tool that has very feature rich capabilities. From perfoming full system backups,<br> uninstalling / installing android apps <br> booting an android into Recovery , Download or Fastboot mode <br> usefull during custom ROM  flashing.
-</p>
-<h1> perfoming full device backup </h1>
-]]></description>
-</item>
-
-
-
-
-
-
-
-
-
-
-
-
-
+</channel>
+</rss>
