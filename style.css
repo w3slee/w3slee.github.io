@@ -93,7 +93,7 @@ div footer {
     color: black;
     font-family: monospace;
     text-align: center;
-    background-color: yellow;
+    background-color: black;
 }
 
 footer#bar_nav {
@@ -101,7 +101,7 @@ footer#bar_nav {
     left: 0;
     bottom: 0;
     width: 100%;
-    background-color: yellow;
+    background-color: black;
     color: black;
     font-family: monospace;
     text-align: center;
