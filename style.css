@@ -29,11 +29,11 @@ a {
     color: #39CCCC;
     font-family: monospace;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 16px;
 }
 
 a:hover {
-    color: palevioletred;
+    color: purple;
 }
 
 body {
@@ -232,4 +232,11 @@ div#DigitalCLOCK {
     font-size: 60px;
     font-family: 'Righteous', cursive;
     letter-spacing: 7px;
+}
+
+div#plist li,
+a {
+    display: relative;
+    font-family: 'Bebas Neue';
+    font-size: 40px;
 }
