@@ -9,7 +9,7 @@
     <nav>
         <ul>
             <li><a href="index.html">🏡 base </a></li>
-            <li><a href="2021.html">🔘 rolling blog</a></li>
+            <li><a href="2021.html"> 🔘 writeups</a></li>
             <li>
                 <a href="rss.xml"> <img src="imgs/rss.png" alt=""> subscribe </a>
             </li>
@@ -25,111 +25,5 @@
     <p> Rolling blog </p>
 
     <!-- LB -->
-<div class='entry'>
-<h2 id='adb-the-swiss-army-knife-for-android'>ADB - the swiss army knife for android</h2>
-<small>[<a href='#adb-the-swiss-army-knife-for-android'>link</a>&mdash;<a href='blog/adb-the-swiss-army-knife-for-android.html'>standalone</a>]</small>
-<p>
-automating common useful tasks with android is easy, due to the variety of tools found in the system
-</p>
-<small>Wed, 07 Apr 2021 07:01:50 -0400</small>
-</div>
-<div class='entry'>
-<h2 id='android-adb-automation'>Android ADB automation</h2>
-<small>[<a href='#android-adb-automation'>🏡</a>&mdash;<a href='blog/android-adb-automation.html'>🏡base</a>]</small>
-<p>
-Lately i've been having fun with the ultimate android swiss tool, ADB ( android debug bridge ).
-You can access it on android via USB or WiFi.
-
-ADB can allow a user to perform device backups, capture screenshots, screencapture, manipulate files, install and unistall software ...and many more useful functions.
-
-<h2> performing a full system backup </h2>
-
-<pre> 
-adb shell backup -f [backup_name].ab -apk -all
-</pre>
-
-
-</p>
-<small>Wed, 07 Apr 2021 06:40:52 -0400</small>
-</div>
-    <div>
-        <small>[<a href='#android-automation-with-adb'>🏡</a>&mdash;<a href='blog/android-automation-with-adb.html'>🏡base</a>]</small>
-
-        <h2>adb shell screenrecord</h2>
-
-        <mark> adb shell screenrecord /sdcard/test.mp4 </mark>
-
-        <pre>Records the device's display to a .mp4 file</pre>
-
-        <mark> adb pull /sdcard/test.mp4 </mark>
-
-        <pre> Download test.mp4 file from Android Device.</pre>
-
-        <mark> adb shell screenrecord [options] <filename></mark>
-
-
-        <h2> Options: </h2>
-
-
-        <mark> --size WIDTHxHEIGHT </mark>
-
-        <pre>
-  Set the video size, e.g. "1280x720". Default is the device's main
-
-  display resolution (if supported), 1280x720 if not. For best results,
-
-  use a size supported by the AVC encoder.
-  </pre>
-
-
-        <mark> --bit-rate RATE </mark>
-
-        <pre>
-  Set the video bit rate, in bits per second. Value may be specified as
-
-  bits or megabits, e.g. '4000000' is equivalent to '4M'. Default 20Mbps.
-  </pre>
-
-
-        <mark> --bugreport </mark>
-
-        <pre>
-  Add additional information, such as a timestamp overlay, that is helpful
-
-  in videos captured to illustrate bugs.
-  </pre>
-
-
-        <mark> --time-limit TIME </mark>
-
-        <pre>
-  Set the maximum recording time, in seconds. Default / maximum is 180.
-  </pre>
-
-
-        <mark> --verbose </mark> Display interesting information on stdout.
-        <small>Wed, 07 Apr 2021 03:39:46 -0400</small>
-    </div>
-
-
-</body>
-<div class="c1">
-    <footer id="bar_nav">
-        <div>
-            <nav>
-                <ul>
-                    <li class="c2"><a href="index.html">🏡 base </a></li>
-                    <li><a href="2021.html">🔘 rolling blog</a></li>
-                    <li>
-                        <a href="rss.xml"> <img src="imgs/rss.png" alt=""> subscribe </a>
-                    </li>
-                    <li>
-                        <a href="about.html"> <img src="imgs/info.png" alt=""> about</a>
-                    </li>
-                </ul>
-            </nav>
-        </div>
-    </footer>
-</div>
-
+</body> 
 </html>
