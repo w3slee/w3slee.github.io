@@ -275,7 +275,8 @@ dt#giantnum {
     font-size: 80px;
 }
 
-dd {
+dd,
+b {
     text-align: left;
     font-size: 60px;
 }
