@@ -172,7 +172,14 @@ footer#homefoot {
 h2 {
     font-family: 'Bebas Neue', cursive;
     font-size: 30px;
-    color: #027B7B;
+    color: #FF8200;
+    text-align: center;
+}
+
+h2[id] {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 25px;
+    color: #FF8200;
     text-align: left;
 }
 
@@ -263,6 +270,7 @@ a {
     font-size: 40px;
 }
 
-dt#deftitle {
+dt#giantnum {
     color: #DE2514;
+    font-size: 80px;
 }
