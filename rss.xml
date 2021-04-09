@@ -57,7 +57,7 @@
         <li>DLMS/COSEMC communication protocol, which ensures good interoperability</li><br>
         <li>Recharge information is transferred in the form of <mark>TOKEN</mark><br></li>
         <li>Built-in contractor and varied control methods are supported<br> </li>
-        <li></li>Pluggable PLC/GPRS module supports remote communication<br> </li>
+        <li>Pluggable PLC/GPRS module supports remote communication<br> </li>
     </p>
 
     <p>
@@ -66,6 +66,8 @@
     </p>
 ]]></description>
 </item>
+
+
 
 
 
