@@ -123,12 +123,11 @@ footer {
 
 ul {
     text-align: left;
-    width: 450px;
     color: white;
 }
 
 li {
-    display: block;
+    display: inline-block;
     padding: 15px;
     list-style: none;
     color: white;
