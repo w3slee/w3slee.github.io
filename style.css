@@ -261,7 +261,8 @@ a {
     font-size: 40px;
 }
 
-br {
-    background: none;
-    border: none;
+dl,
+dt,
+dd {
+    color: white;
 }
