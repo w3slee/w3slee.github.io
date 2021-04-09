@@ -206,6 +206,10 @@ a#booklist {
     background-color: black;
 }
 
+a:hover#booklist {
+    color: #E27429;
+}
+
 
 /* .blob {
     background: black;
