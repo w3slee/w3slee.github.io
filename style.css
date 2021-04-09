@@ -201,6 +201,11 @@ div#DigitalCLOCK {
     font-size: 18px;
 }
 
+a#booklist {
+    color: white;
+    background-color: black;
+}
+
 
 /* .blob {
     background: black;
