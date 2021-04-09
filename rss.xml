@@ -64,8 +64,34 @@
         The meter has a energy measuring unit that can do voltage &amp; and current sampling in the icu.<br> It has a data processing unit comprising of an MCU and memory. A power supply unit, I/O unit which is the LCD display, neat features like PLC/GPRS
         communication and optical port. A load control unit which is handled by the contractor
     </p>
+
+    <div>
+        <figure>
+            <img src="/imgs/schema.png" alt="single-phase-energy-meter">
+            <figcaption>HXE12-KP - components</figcaption>
+        </figure>
+        <p>
+
+            Communication Interfaces Meter has one optical communication port, and one PLC/GPRS communication port(only one communication module between PLC and GPRS can be chosen for one meter).<br> The two communication interfaces are independent from
+            each other, thus, failure of one communication interface will not affect the other.
+        </p>
+    </div>
+
+    <div>
+        <figure>
+            <img src="/imgs/LCD.png" alt="single-phase-energy-meter">
+            <figcaption>LCD Diplay</figcaption>
+        </figure>
+        <br>
+        <figure>
+            <img src="/imgs/LCD_info.png" alt="single-phase-energy-meter">
+            <figcaption>LCD Display Items</figcaption>
+        </figure>
+    </div>
 ]]></description>
 </item>
+
+
 
 
 

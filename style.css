@@ -255,3 +255,8 @@ a {
     font-family: 'Bebas Neue';
     font-size: 40px;
 }
+
+br {
+    background: none;
+    border: none;
+}
