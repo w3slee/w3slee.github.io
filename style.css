@@ -275,8 +275,12 @@ dt#giantnum {
     font-size: 80px;
 }
 
-dd,
+dd {
+    text-align: left;
+    font-size: 30px;
+}
+
 b {
     text-align: left;
-    font-size: 60px;
+    font-size: 45px;
 }

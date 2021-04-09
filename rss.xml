@@ -106,7 +106,7 @@
                     <h2 id="conttest">Contractor Test</h2>
                     <b>0000-0000-0001-5099-7584</b><br> If the contractor is connected, test disconnecting<br> If contractor is disconnected, test connecting<br> Contactor goes back to initial status after 2 minutes. <u>NOTE:</u> If the credit balance
                     is
-                    <=0, connecting contactor shall not be tested. <h2> LCD Test</h2>
+                    <=0, connecting contactor shall not be tested. <h2 id="lcdt"> LCD Test</h2>
             <b>0000-0000-0001-6777-4880</b> </p><br> Test LCD full screen display, check if any code is absent
             <h2 id="totalactive">Display total active forward energy</h2><br>
             <b>0000-0000-0002-0132-8896 </b>
@@ -134,6 +134,8 @@
     </div>
 ]]></description>
 </item>
+
+
 
 
 
