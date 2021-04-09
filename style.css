@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Frijole&family=Libre+Barcode&family=Megrim+39&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
 
 /* @import url('https://fonts.googleapis.com/css2?family=Frijole&display=swap'); */
 
@@ -127,6 +128,13 @@ ul {
 }
 
 li {
+    padding: 15px;
+    list-style: none;
+    color: white;
+    text-align: left;
+}
+
+li[id] {
     display: inline-block;
     padding: 15px;
     list-style: none;
@@ -171,14 +179,14 @@ footer#homefoot {
 
 h2 {
     font-family: 'Bebas Neue', cursive;
-    font-size: 30px;
+    font-size: 28px;
     color: #FF8200;
     text-align: center;
 }
 
 h2[id] {
     font-family: 'Bebas Neue', cursive;
-    font-size: 25px;
+    font-size: 35px;
     color: #FFE9BA;
     text-align: left;
 }
@@ -270,17 +278,106 @@ a {
     font-size: 40px;
 }
 
-dt#giantnum {
-    color: #DE2514;
-    font-size: 80px;
+dt[id] {
+    color: white;
+    font-size: 20px;
+    text-align: left;
+    font-style: normal;
+    font-family: 'Righteous';
+    padding: 15px;
+    text-align: left;
+    /* background: #222; */
+    background: #0E6655;
+    /* border: 1px solid white; */
+    /* -moz-box-shadow: inset 0 0 5px #000000;
+    -webkit-box-shadow: inset 0 0 5px #000000;
+    box-shadow: inset 0 0 5px #000000; */
 }
 
-dd {
-    text-align: left;
+dt[id]:hover {
+    color: white;
     font-size: 30px;
+    text-align: left;
+    font-style: normal;
+    font-family: 'Righteous';
+    padding: 15px;
+    text-align: left;
+    /* background: #222; */
+    background: #0E6655;
+    /* border: 1px solid white; */
+    -moz-box-shadow: inset 0 0 5px #000000;
+    -webkit-box-shadow: inset 0 0 5px #000000;
+    box-shadow: inset 0 0 5px #000000;
+}
+
+dt {
+    color: white;
+    font-size: 20px;
+    text-align: left;
+    font-style: normal;
+    font-family: monospace;
+    padding: 15px;
+    text-align: left;
+    /* background: #222; */
+    background: #0E6655;
+    /* border: 1px solid white; */
+    -moz-box-shadow: inset 0 0 5px #000000;
+    -webkit-box-shadow: inset 0 0 5px #000000;
+    box-shadow: inset 0 0 5px #000000;
+}
+
+dd[id] {
+    color: whitesmoke;
+    font-style: normal;
+    font-family: monospace;
+    padding: 15px;
+    text-align: left;
+    /* background: #222; */
+    background: #0E6655;
+    /* border: 1px solid white; */
+    font-size: 16px;
+    /* -moz-box-shadow: inset 0 0 20px #000000;
+    -webkit-box-shadow: inset 0 0 10px #000000;
+    box-shadow: inset 0 0 20px #000000; */
+}
+
+dd[id]:hover {
+    color: whitesmoke;
+    font-style: normal;
+    font-family: monospace;
+    padding: 15px;
+    text-align: left;
+    /* background: #222; */
+    background: #0E6655;
+    /* border: 1px solid white; */
+    font-size: 30px;
+    /* -moz-box-shadow: inset 0 0 20px #000000;
+    -webkit-box-shadow: inset 0 0 10px #000000;
+    box-shadow: inset 0 0 20px #000000; */
 }
 
 b {
     text-align: left;
     font-size: 45px;
+}
+
+.hide {
+    display: none;
+}
+
+.info:hover+.hide {
+    display: block;
+    color: #FAEFDE;
+    font-size: 25px;
+    text-align: left;
+    font-style: normal;
+    font-family: 'Righteous', cursive;
+    padding: 15px;
+    text-align: left;
+    /* background: #222; */
+    background: #076F94;
+    /* border: 1px solid white; */
+    -moz-box-shadow: inset 0 0 20px black;
+    -webkit-box-shadow: inset 0 0 20px black;
+    box-shadow: inset 0 0 20px black;
 }

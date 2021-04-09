@@ -24,9 +24,127 @@
     </div>
 
     <!-- LB -->
-    <div class='entry'>
-        <h2 id='how-did-we-get-here'>How did we get here ?</h2>
-        <small>[<a href='#how-did-we-get-here'>link</a>&mdash;<a href='blog/how-did-we-get-here.html'>standalone</a>]</div>
+<div class='entry'>
+<h2 id='how-did-we-get-here'>How did we get here ?</h2>
+<small>[<a href='#how-did-we-get-here'>link</a>&mdash;<a href='blog/how-did-we-get-here.html'>standalone</a>]</div>
+<div class='entry'>
+<h2 id='<p>
+
+    Tales of reading the fun manual an finally profiting 💰
+
+
+</p>
+
+<div>
+    <figure>
+        <img src="/imgs/ciu.png" alt="single-phase-energy-meter">
+        <figcaption>HXE12-KP - single phase energy meter</figcaption>
+    </figure>
+
+
+    <p>
+        The above image is sometimes a conversation starter in Kenya, like discussing who is has a power running low at their house.<br> The loud beeping sound that this module emits when the 'token' ( refered to as the credit score in the meter denoting
+        the current units of power left / just like a prepaid card for your mobile subscription)<br> will send crickets on an epic migration to a less noisy habitat.
+        <br> , Let's geek out !.<br> The above is a Single Phase two wire prepaid keypad Energy Meter, ~ phase refers to the distribution of a load. You can read more about that from the Google.<br> It is designed to be used for the prepayment of electricity
+        before power if supplied in a household.
+    </p>
+    <h2 id="mainfunc">Main Functions </h2>
+    <p>
+        <ul>
+            <li>energy measurement</li>
+            <li>communication</li>
+            <li>prepayment</li>
+            <li>data display</li>
+            <li>anti-tampering</li>
+            <li>keypad input &amp; inquiry</li>
+        </ul>
+
+        etc
+    </p>
+    <p>
+        From the manual : <br>
+        <h2 id="Highlights">Highlights</h2>
+
+        <li> The interface is based on Standard Transfer Protocol, which is an open source standard and the only international specification on prepaid system</li><br>
+        <li>DLMS/COSEMC communication protocol, which ensures good interoperability</li><br>
+        <li>Recharge information is transferred in the form of <mark>TOKEN</mark><br></li>
+        <li>Built-in contractor and varied control methods are supported<br> </li>
+        <li>Pluggable PLC/GPRS module supports remote communication<br> </li>
+    </p>
+
+    <p>
+        The meter has a energy measuring unit that can do voltage &amp; and current sampling in the icu.<br> It has a data processing unit comprising of an MCU and memory. A power supply unit, I/O unit which is the LCD display, neat features like PLC/GPRS
+        communication and optical port. A load control unit which is handled by the contractor
+    </p>
+
+    <div>
+        <figure>
+            <img src="/imgs/schema.png" alt="single-phase-energy-meter">
+            <figcaption>HXE12-KP - components</figcaption>
+        </figure>
+
+
+        <h2 id="comms">Communication Interface
+            <h2>
+                <p>
+                    The meter has one optical communication port, and one PLC/GPRS communication port(only one communication module between PLC and GPRS can be chosen for one meter).<br> The two communication interfaces are independent from each other,
+                    thus, failure of one communication interface will not affect the other.
+                </p>
+                <h2>PLC Communication</h2>
+                <p>
+                    The PLC communicates at a Baud rate of 4800bps, 8 data digits and without check digit. The meter reading can be realized through DCU via PLC communication in AMI network<br> with a pluggable PLC comms module same spec for the GPRS
+                    communication
+                </p>
+                <p>In order to recharge , a client purchases electricity and a 20-digit TOKEN is generated for the amount bought. The token is entered into the ciu by keying in the digits <br> The meter displays status codes after the token is entered.
+                    <dl>
+                        <dt id="deftitle"> successfull recharge</dt>
+                        <dd>Credit on the meter should have an increased score.</dd>
+                        <dt id="deftitle">01</dt>
+                        <dd>when the token is wrong</dd>
+                        <dt id="deftitle">02</dt>
+                        <dd>when the token has already been used</dd>
+                        <dt id="deftitle">03</dt>
+                        <dd>when the token has expired</dd>
+                        <dt id="deftitle">04</dt>
+                        <dd>expired security key</dd>
+                        <dt id="deftitle">05</dt>
+                        <dd>When charging amount exceeds the accumulated charging amount limit, meter displays</dd>
+                    </dl>
+
+                </p>
+                <p>
+                    The meter has different types of Tokens , an interesting one is the <mark>Test Token</mark> which could be used to test any prepayment keypad meter which is compliant with STS<br>
+
+                    <h2 id="conttest">Contractor Test</h2>
+                    <b>0000-0000-0001-5099-7584</b><br> If the contractor is connected, test disconnecting<br> If contractor is disconnected, test connecting<br> Contactor goes back to initial status after 2 minutes. <u>NOTE:</u> If the credit balance
+                    is
+                    <=0, connecting contactor shall not be tested. <h2 id="lcdt"> LCD Test</h2>
+            <b>0000-0000-0001-6777-4880</b> </p><br> Test LCD full screen display, check if any code is absent
+            <h2 id="totalactive">Display total active forward energy</h2><br>
+            <b>0000-0000-0002-0132-8896 </b>
+            <h2 id="seckey">Display security key version</h2>
+            <b>1844-6744-0738-4377-2416 </b>
+            <h2 id="tarrif">Display tarrif index</h2>
+            <b>3689-3488-1475-5332-2496 </b>
+            <h2 id="maxpwr">Display maximum power</h2>
+            <b>0000-0000-0012-0797-4400 </b>
+
+
+            </p>
+    </div>
+
+    <div>
+        <figure>
+            <img src="/imgs/LCD_x.png" alt="single-phase-energy-meter">
+            <figcaption>LCD Diplay</figcaption>
+        </figure>
+        <br>
+        <figure>
+            <img src="/imgs/LCD_infox.png" alt="single-phase-energy-meter">
+            <figcaption>LCD Display Items</figcaption>
+        </figure>
+    </div>'></h2>
+<small>[<a href='#'>link</a>&mdash;<a href=''>standalone</a>]</div>
 <div class='entry'>
 <h2 id='<p>
 
