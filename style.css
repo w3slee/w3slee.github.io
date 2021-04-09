@@ -274,3 +274,8 @@ dt#giantnum {
     color: #DE2514;
     font-size: 80px;
 }
+
+dd {
+    text-align: left;
+    font-size: 60px;
+}
