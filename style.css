@@ -172,6 +172,7 @@ footer#homefoot {
 h2 {
     font-family: 'Bebas Neue', cursive;
     font-size: 30px;
+    color: #027B7B;
 }
 
 a#weblinks {
@@ -261,8 +262,6 @@ a {
     font-size: 40px;
 }
 
-dl,
-dt,
-dd {
-    color: white;
+#deftitle {
+    color: #DE2514;
 }
