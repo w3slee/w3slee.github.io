@@ -206,6 +206,11 @@ a#booklist {
     background-color: black;
 }
 
+#goodlist {
+    display: left;
+    text-align: left;
+}
+
 a:hover#booklist {
     color: #E27429;
 }
