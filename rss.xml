@@ -85,18 +85,18 @@
                 </p>
                 <p>In order to recharge , a client purchases electricity and a 20-digit TOKEN is generated for the amount bought. The token is entered into the ciu by keying in the digits <br> The meter displays status codes after the token is entered.
                     <dl>
-                        <dt id="deftitle"> successfull recharge</dt>
-                        <dd>Credit on the meter should have an increased score.</dd>
-                        <dt id="deftitle">01</dt>
-                        <dd>when the token is wrong</dd>
-                        <dt id="deftitle">02</dt>
-                        <dd>when the token has already been used</dd>
-                        <dt id="deftitle">03</dt>
-                        <dd>when the token has expired</dd>
-                        <dt id="deftitle">04</dt>
-                        <dd>expired security key</dd>
-                        <dt id="deftitle">05</dt>
-                        <dd>When charging amount exceeds the accumulated charging amount limit, meter displays</dd>
+                        <dt class="info" id="deftitle"> successfull recharge</dt>
+                        <dd class="hide">Credit on the meter should have an increased score.</dd>
+                        <dt class="info" id="deftitle">01</dt>
+                        <dd class="hide">when the token is wrong</dd>
+                        <dt class="info" id="deftitle">02</dt>
+                        <dd class="hide">when the token has already been used</dd>
+                        <dt class="info" id="deftitle">03</dt>
+                        <dd class="hide">when the token has expired</dd>
+                        <dt class="info" id="deftitle">04</dt>
+                        <dd class="hide">expired security key</dd>
+                        <dt class="info" id="deftitle">05</dt>
+                        <dd class="hide">When charging amount exceeds the accumulated charging amount limit, meter displays</dd>
                     </dl>
 
                 </p>
@@ -121,21 +121,11 @@
             </p>
     </div>
 
-    <div>
-        <figure>
-            <img src="/imgs/LCD_x.png" alt="single-phase-energy-meter">
-            <figcaption>LCD Diplay</figcaption>
-        </figure>
-        <br>
-        <figure>
-            <img src="/imgs/LCD_infox.png" alt="single-phase-energy-meter">
-            <figcaption>LCD Display Items</figcaption>
-        </figure>
-    </div>
-</body>
-</html>
+</div>
 ]]></description>
 </item>
+
+
 
 
 
