@@ -15,7 +15,7 @@
         width: 100%;
     }
     body {
-        font-size: 19px;
+        font-size: 14pt;
         cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:24px;'><text y='50%'>👆🏾</text></svg>") 16 0, auto;
         /*!emojicursor.app*/
     }
@@ -39,7 +39,7 @@ a {
     color: #39CCCC;
     font-family: monospace;
     text-decoration: none;
-    font-size: 16px;
+    font-size: 14pt;
 }
 
 a:hover {
@@ -79,14 +79,14 @@ pre {
 
 h1 {
     color: goldenrod;
-    font-size: 35px;
+    font-size: 20pt;
     font-variant: monospace;
     font-family: 'Bebas Neue', cursive;
 }
 
 h1[id] {
     color: goldenrod;
-    font-size: 35px;
+    font-size: 20pt;
     font-variant: monospace;
     font-family: 'Bebas Neue', cursive;
     text-align: left;
@@ -101,7 +101,7 @@ p {
     /* background: #222; */
     background: #0E6655;
     border: 1px solid white;
-    font-size: 16px;
+    font-size: 12pt;
 }
 
 .htext {
@@ -115,14 +115,6 @@ small {
     padding: 5px;
     font-weight: bold;
     display: block;
-}
-
-::-moz-selection {
-    font-size: 50px;
-}
-
-::selection {
-    font-size: 50px;
 }
 
 footer {
@@ -166,7 +158,7 @@ li[id] {
 }
 
 h1#stitle {
-    font-size: 60px;
+    font-size: 30pt;
 }
 
 div#postlist {
@@ -238,7 +230,7 @@ div#DigitalCLOCK {
     font-family: 'Megrim', cursive;
     background: #0E6655;
     border: 1px solid rgb(212, 200, 30);
-    font-size: 18px;
+    font-size: 12pt;
 }
 
 a#booklist {
