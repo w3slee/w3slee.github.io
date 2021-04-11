@@ -106,6 +106,14 @@ small {
     display: block;
 }
 
+::-moz-selection {
+    font-size: 50px;
+}
+
+::selection {
+    font-size: 50px;
+}
+
 footer {
     position: fixed;
     left: 0;
