@@ -1,0 +1,176 @@
+<p>
+
+    Tales of reading the fun manual an finally profiting 💰
+
+
+</p>
+
+<div>
+    <figure>
+        <img src="/imgs/ciu.png" alt="single-phase-energy-meter">
+        <figcaption>HXE12-KP - single phase energy meter</figcaption>
+    </figure>
+
+
+    <p>
+        The above image is sometimes a conversation starter in Kenya, like discussing who is has a power running low at their house.<br> The loud beeping sound that this module emits when the 'token' ( refered to as the credit score in the meter denoting
+        the current units of power left / just like a prepaid card for your mobile subscription)<br> will send crickets on an epic migration to a less noisy habitat.
+        <br> , Let's geek out !.<br> The above is a Single Phase two wire prepaid keypad Energy Meter, ~ phase refers to the distribution of a load. You can read more about that from the Google.<br> It is designed to be used for the prepayment of electricity
+        before power if supplied in a household.
+    </p>
+    <h2 id="mainfunc">Main Functions </h2>
+    <p>
+        <ul>
+            <li>energy measurement</li>
+            <li>communication</li>
+            <li>prepayment</li>
+            <li>data display</li>
+            <li>anti-tampering</li>
+            <li>keypad input &amp; inquiry</li>
+        </ul>
+
+        etc
+    </p>
+    <p>
+        From the manual : <br>
+        <h2 id="Highlights">Highlights</h2>
+
+        <li> The interface is based on Standard Transfer Protocol, which is an open source standard and the only international specification on prepaid system</li><br>
+        <li>DLMS/COSEMC communication protocol, which ensures good interoperability</li><br>
+        <li>Recharge information is transferred in the form of <mark>TOKEN</mark><br></li>
+        <li>Built-in contractor and varied control methods are supported<br> </li>
+        <li>Pluggable PLC/GPRS module supports remote communication<br> </li>
+    </p>
+
+    <p>
+        The meter has a energy measuring unit that can do voltage &amp; and current sampling in the icu.<br> It has a data processing unit comprising of an MCU and memory. A power supply unit, I/O unit which is the LCD display, neat features like PLC/GPRS
+        communication and optical port. A load control unit which is handled by the contractor
+    </p>
+
+    <div>
+        <figure>
+            <img src="/imgs/schema.png" alt="single-phase-energy-meter">
+            <figcaption>HXE12-KP - components</figcaption>
+        </figure>
+
+
+        <h2 id="comms">Communication Interface
+            <h2>
+                <p>
+                    The meter has one optical communication port, and one PLC/GPRS communication port(only one communication module between PLC and GPRS can be chosen for one meter).<br> The two communication interfaces are independent from each other,
+                    thus, failure of one communication interface will not affect the other.
+                </p>
+                <h2 id="plc">PLC Communication</h2>
+                <p>
+                    The PLC communicates at a Baud rate of 4800bps, 8 data digits and without check digit. The meter reading can be realized through DCU via PLC communication in AMI network<br> with a pluggable PLC comms module same spec for the GPRS
+                    communication
+                </p>
+                <p>In order to recharge , a client purchases electricity and a 20-digit TOKEN is generated for the amount bought. The token is entered into the ciu by keying in the digits <br> The meter displays status codes after the token is entered.
+                    <dl>
+                        <dt class="info" id="deftitle"> successfull recharge</dt>
+                        <dd class="hide">Credit on the meter should have an increased score.</dd>
+                        <dt class="info" id="deftitle">01</dt>
+                        <dd class="hide">when the token is wrong</dd>
+                        <dt class="info" id="deftitle">02</dt>
+                        <dd class="hide">when the token has already been used</dd>
+                        <dt class="info" id="deftitle">03</dt>
+                        <dd class="hide">when the token has expired</dd>
+                        <dt class="info" id="deftitle">04</dt>
+                        <dd class="hide">expired security key</dd>
+                        <dt class="info" id="deftitle">05</dt>
+                        <dd class="hide">When charging amount exceeds the accumulated charging amount limit, meter displays</dd>
+                    </dl>
+
+                </p>
+                <p>
+                    The meter has different types of Tokens , an interesting one is the <mark>Test Token</mark> which could be used to test any prepayment keypad meter which is compliant with STS<br>
+
+
+                </p>
+                <h2 id="ttokens">TEST TOKENS</h2>
+                <dl>
+                    <dt class="info" id="deftitle">contractor test</dt>
+                    <dd class="hide">0000-0000-0001-5099-7584</dd>
+                    <dt class="info" id="deftitle">LCD test</dt>
+                    <dd class="hide">0000-0000-0001-6777-4880</dd>
+                    <dt class="info" id="deftitle">Display total active forward energy</dt>
+                    <dd class="hide">0000-0000-0002-0132-8896</dd>
+                    <dt class="info" id="deftitle">Display security key version</dt>
+                    <dd class="hide">1844-6744-0738-4377-2416</dd>
+                    <dt class="info" id="deftitle">Display tarrif index</dt>
+                    <dd class="hide">3689-3488-1475-5332-2496</dd>
+                    <dt class="info" id="deftitle">Display maximum power</dt>
+                    <dd class="hide">0000-0000-0012-0797-4400 </dd>
+
+                    <dt class="info" id="deftitle">Display meter status</dt>
+                    <dd class="hide">0000-0000-0022-8172-8512 </dd>
+                    <dt class="info" id="deftitle">Display instantaneous power</dt>
+                    <dd class="hide">0000-0000-0044-2920-8064 </dd>
+                    <dt class="info" id="deftitle">Display meter version No.</dt>
+                    <dd class="hide">0000-0000-0087-2419-5840 </dd>
+                    <dt class="info" id="deftitle">Complete test</dt>
+                    <dd class="hide">5649-3153-7254-5031-3471 </dd>
+                </dl>
+                <p>Make contactor test, LCD display test, display total active forward energy test, display security key version test, and display tariff index display in turn. <br> The interval between each test shall be 8s~10s. </p>
+    </div>
+    <h2 id="sc">Short codes</h2>
+    <p>The meter has a series of short codes that return interesting results. I believe these are the most useful</p>
+
+    <dl>
+        <dt class="info" id="deftitle">credit balance</dt>
+        <dd class="hide">801</dd>
+        <dt class="info" id="deftitle">Emergency credit</dt>
+        <dd class="hide">811 : This is how we got here, with this code , you can get an Emergency token which can be activated after your tokens run out, giving you 10 Tokens depending on your overdraft limit<br> The aquired units do not seem to run on the same tarrif
+            index as set by KPLC, this allows you to use the 10 units at a much lower cost until it runs out. The units as seen on the meter will have a negative value <br> eg. -10 means 10 emergency units have been given. When you buy your next token
+            . The credited units will be subtracted from the current tokens bought , allowing the emergeny credit to be reset. <br> This option will save you lots on your electricity bill for those who have meters that support it !
+        </dd>
+        <dt class="info" id="deftitle">Overdraft limit</dt>
+        <dd class="hide">810</dd>
+        <dt class="info" id="deftitle">meter serial number</dt>
+        <dd class="hide">804</dd>
+        <dt class="info" id="deftitle">meter status</dt>
+        <dd class="hide">807</dd>
+        <dt class="info" id="deftitle">Tarrif index</dt>
+        <dd class="hide">809</dd>
+        <dt class="info" id="deftitle">Token code of last recharge</dt>
+        <dd class="hide">830</dd>
+        <dt class="info" id="deftitle">Disable audible alarm</dt>
+        <dd class="hide">812</dd>
+        <dt class="info" id="deftitle">Last recharge amount</dt>
+        <dd class="hide">817</dd>
+        <dt class="info" id="deftitle">Times of Power off</dt>
+        <dd class="hide">819</dd>
+        <dt class="info" id="deftitle">Return logoff TOKEN</dt>
+        <dd class="hide">818</dd>
+
+    </dl>
+</div>
+
+<figure>
+    <img src="/imgs/jtag.png" alt="jtag-port">
+    <figcaption>Teardown of the meter </figcaption>
+</figure>
+<p>Sometimes good things hide in plain sight, 'usikae kwa giza !', I did take the module apart and YES! it has JTAG support which allows us to interact with the processor over serial communication for debugging capabilities, I don't have any JTAG cables
+    :-( laying around at the moment<br> next up is getting into the system !) </p>
+
+</body>
+
+</html>
+</body>
+
+</html>
+</body>
+
+</html>
+</body>
+
+</html>
+</body>
+
+</html>
+</body>
+
+</html>
+</body>
+
+</html>
