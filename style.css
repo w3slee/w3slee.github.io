@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Frijole&family=Libre+Barcode&family=Megrim+39&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 
 /* @import url('https://fonts.googleapis.com/css2?family=Frijole&display=swap'); */
 
@@ -42,7 +43,9 @@ a {
 }
 
 a:hover {
-    color: purple;
+    color: rgb(231, 231, 231);
+    cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:24px;'><text y='50%'>🤦🏾‍♂️</text></svg>") 16 0, auto;
+    /*!emojicursor.app*/
 }
 
 body {
@@ -250,6 +253,8 @@ a#booklist {
 
 a:hover#booklist {
     color: #E27429;
+    cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:24px;'><text y='50%'>🤦🏾‍♂️</text></svg>") 16 0, auto;
+    /*!emojicursor.app*/
 }
 
 
@@ -349,7 +354,7 @@ dt {
 dd[id] {
     color: whitesmoke;
     font-style: normal;
-    font-family: monospace;
+    font-family: 'Press Start 2P', cursive;
     padding: 15px;
     text-align: left;
     /* background: #222; */
@@ -364,7 +369,7 @@ dd[id] {
 dd[id]:hover {
     color: whitesmoke;
     font-style: normal;
-    font-family: monospace;
+    font-family: 'Press Start 2P', cursive;
     padding: 15px;
     text-align: left;
     /* background: #222; */
@@ -391,7 +396,7 @@ b {
     font-size: 25px;
     text-align: left;
     font-style: normal;
-    font-family: 'Righteous', cursive;
+    font-family: 'Press Start 2P', cursive;
     padding: 15px;
     text-align: left;
     /* background: #222; */
