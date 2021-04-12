@@ -172,6 +172,13 @@ div#sweetnav {
     text-align: left;
 }
 
+div#footnav {
+    display: block;
+    text-align: left;
+    font-weight: lighter;
+    font-size: 10px;
+}
+
 footer#homefoot {
     background-color: #242424;
     position: fixed;
