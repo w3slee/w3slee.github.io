@@ -12,9 +12,9 @@
 <!-- LB -->
 
 <item>
-<title>How did we get here ?</title>
+<title></title>
 <guid>https://w3slee.github.io/2021.html#how-did-we-get-here</guid>
-<pubDate>Fri, 09 Apr 2021 00:17:21 -0400</pubDate>
+<pubDate>Thu, 15 Apr 2021 18:18:50 +0300</pubDate>
 <description><![CDATA[
 </small>
 <p>
@@ -54,7 +54,7 @@
         From the manual : <br>
         <h2 id="Highlights">Highlights</h2>
 
-        <li> The interface is based on Standard Transfer Protocol, which is an open source standard and the only international specification on prepaid system</li><br>
+        <li>The interface is based on Standard Transfer Protocol, which is an open source standard and the only international specification on prepaid system</li><br>
         <li>DLMS/COSEMC communication protocol, which ensures good interoperability</li><br>
         <li>Recharge information is transferred in the form of <mark>TOKEN</mark><br></li>
         <li>Built-in contractor and varied control methods are supported<br> </li>
@@ -175,6 +175,7 @@
 </body>
 
 </html>
+<<<<<<< HEAD
 </body>
 
 </html>
@@ -195,11 +196,16 @@
 </html>
 </body>
 </html>
+=======
+>>>>>>> 6e0c542025265f08f64424ade20f95f6cb1e4e63
 ]]></description>
 </item>
 
 
 
+<<<<<<< HEAD
 
 </channel>
 </rss>
+=======
+>>>>>>> 6e0c542025265f08f64424ade20f95f6cb1e4e63
