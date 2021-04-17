@@ -24,7 +24,7 @@
     I downloaded the latest application package and uploaded it to my testing vm, this one's called <i>stacy</i>, "running stock blackarch" with neat tools.
     Unfortunately it only took `jadx` to finish the job .
 
-    <h2> 🪲 The foreplay - Static Application Analysis </h2>
+    <h2> 🪲 The foreplay - Static Application Analysis 🪲</h2>
     <dt id="finfot">File information
     <dd id="finfo">
         Size : 18.62 MB
@@ -38,6 +38,8 @@
 </p>
 ]]></description>
 </item>
+
+
 
 
 <item>
