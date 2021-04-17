@@ -54,6 +54,7 @@ a:hover {
 body {
     max-width: 70%;
     margin: auto;
+    margin-top: 25px;
     text-align: center;
     padding: 30px;
     background-color: black;
@@ -213,7 +214,7 @@ h2 {
 
 h2[id] {
     font-family: 'Fira Code', cursive;
-    font-size: 16px;
+    font-size: 18px;
     color: goldenrod;
     text-align: left;
 }
