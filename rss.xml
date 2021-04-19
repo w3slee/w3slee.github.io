@@ -59,16 +59,64 @@
 <dl>
     <dt>HASH</dt>
     <dd>MD5: 2f11e6e52ba1ab6db967b841e395d22f</dd>
-    SHA256: 3750e569684cb2fec0291f19725476b9b37d777c73920b0aff6c8b0448fc0253
     <dd>SHA1: 37806fe466c8252934ead66071aab4fd584d0647</dd>
+    <dd> SHA256: 3750e569684cb2fec0291f19725476b9b37d777c73920b0aff6c8b0448fc0253</dd>
 
     <dt id="appinfo">APP INFORMATION</dt>
     <dd>Package Name: com.ganjipayments</dd>
     <dd>Android Version Name: 1.1.1.16</dd>
-
 </dl>
+
+<p> Now comes the interesting bit, after looking into some of the url the android application was interacting with , I immediatly had a smirk😏 on my face.Well boys and girls this seems
+    like it isn't going to take much long.</p>
+<p>
+    Diving into <mark>res/values/strings.xml</mark>, where all application strings are; I saw this gem
+
+    <li>🙅🏽‍♀️ https://ganji-35361.firebaseio.com/ 🙅🏽‍♀️</li>
+    <p>Appending .json to the url after the trailing slash, making it https://ganji-35361.firebaseio.com/.json dumped all data in the database on the web.
+        Simply put , the database is publicly exposed and an attacker can very easily perform queries into the database , create, update and delete data from the database.
+    </p>
+
+    I wasn't going to do that because of the 'ethics', what did I find though :
+
+</p>
+<p> This is where i'll throw in the phrase , "even a kid could do it" , no need for hooking up debuggers or even deobfuscating the source code</p>
+
+<h2>📑 findings 📑</h2>
+<p> The database contained information about the Employees, Clients and Customer support messages.<br>
+
+    <figure>
+        <img src="/imgs/ganji_user_data.png" alt="leaked_messages">
+        <figcaption>publicly exposed client and customer support messages</figcaption>
+    </figure>
+
+    <figure>
+        <img src="/imgs/ganji_slack_users.png" alt="exposed_employee_data">
+        <figcaption>publicly exposed employees data </figcaption>
+    </figure>
+
+    <figure>
+        <img src="/imgs/ganji_num_name.png" alt="exposed_numbers_names">
+        <figcaption>after writing a python script to clean up the data and grab juicy sections </figcaption>
+    </figure>
+
+    <br>
+    Well imagine all these people having their debt's cleared, I guess I wasn't Joker at the moment more of a good will cast.
+    I repored the issue and this is how it went.
+</p>
+
+
+<h2> Parting ways </h2>
+<h2 id="disclosure">bug report and disclosure</h2>
+<p>I emailed the customer support team and fortunately they got back to me . Wanted this to be wrapped up as quick as possible.
+    <figcaption>
+        <img src="/imgs/disclose.png" alt="">
+    </figcaption>
+</p>
 ]]></description>
 </item>
+
+
 
 
 
