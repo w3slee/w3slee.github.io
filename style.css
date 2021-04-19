@@ -439,6 +439,7 @@ div#watts p {
 }
 
 img {
-    margin-right: 50% auto;
-    max-width: fit-content;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
 }
