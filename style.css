@@ -444,7 +444,7 @@ img {
     margin-right: auto;
 }
 
-img#logo {
+img[id] {
     margin-right: 50% auto;
     max-width: fit-content;
 }
