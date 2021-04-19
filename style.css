@@ -443,3 +443,8 @@ img {
     margin-left: auto;
     margin-right: auto;
 }
+
+img#logo {
+    margin-right: 50% auto;
+    max-width: fit-content;
+}
