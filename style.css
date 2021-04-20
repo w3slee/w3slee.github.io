@@ -450,3 +450,46 @@ img[id] {
     margin-right: 50% auto;
     max-width: fit-content;
 }
+
+.linc-area {
+    overflow: hidden;
+    position: relative;
+}
+
+#linc {
+    display: block;
+    padding: 9px;
+    line-break: loose;
+    width: 75%;
+    white-space: normal;
+    overflow-wrap: break-word;
+    text-align: justify;
+    background: #000000;
+    color: white;
+text-align: center;
+font-size: 14pt;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);    
+    transform-style: preserve-3d;
+
+    cursor: copy;
+}
+
+.linc-did-copy {
+    position: absolute;
+    left: 50%;
+    top: 100%;
+    transform: translate3d(-50%, 0, 0);
+    transform-style: preserve-3d;
+    transition: top 0.2s, transform 0.2s;
+    
+    background: white;
+    padding: 9px;
+}
+
+.linc-area.copied > .linc-did-copy {
+    top: 50%;
+    transform: translate3d(-50%, -50%, 0);
+}
+

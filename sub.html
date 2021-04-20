@@ -8,19 +8,43 @@
 
     <title>subscribe</title>
 </head>
+<script>
+addEventListener('click', ({target}) => {
+    if(target === linc ){
+        linc.select();
+        document.execCommand('copy');
+        linc.parentNode.classList.add('copied');
+        setTimeout(() => linc.parentNode.classList.remove('copied'), 1000);
+    }
+})  
+
+</script>
 <body>
 <p>subscribe to my rss feed for updates .</p>
 <h1> how to view my posts on your terminal </h1>
 
 <h2>NEWSBOAT</h2>
 <p>Newsboat is an RSS feed reader with a terminal user interface.</p>
+<h2 id="nb">Installing newsboat</h2>
 <dl>
-    <dt>installing newsboat</dt>
+    <dt>arch linux</dt>
     <dd>
-        OSX : brew install newsboat<br>
-        The configuration files will be located at $HOME/.newsboat/config
+pacman -S newsboat    
+</dd>
+    <dt>osx</dt>
+    <dd>
+brew install newsboat
     </dd>
+    <dt>ubuntu</dt>
+    <dd>
+sudo apt-get install newsboat    </dd>
+
 </dl>
+<h3>click to copy</h3>
+<div class="linc-area"> <textarea readonly="" id="linc">https://w3slee.github.io/rss.xml "w3slee's blog"</textarea><div class="linc-did-copy"> ✅ Copied </div></div>
+<p>open the config directory located at $HOME/.newsboat/ , open the `url` file and paste the link and save the file
+    <br> open up your terminal and run newsboat to reload the feeds and you'll be able to view my recent posts.
+</p>
 </body>
 <footer>
     <div id="footnav ">
