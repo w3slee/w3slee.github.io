@@ -437,12 +437,12 @@ div#watts p {
     box-shadow: 5px 5px 5px #777777;
     background-color: #7A6262;
 }
-/* 
+
 img {
     width: 100%;
     margin-left: auto;
     margin-right: auto;
-} */
+}
 
 img[id] {
     width: 100%;
@@ -466,11 +466,11 @@ img[id] {
     text-align: justify;
     background: #000000;
     color: white;
-text-align: center;
-font-size: 14pt;
+    text-align: center;
+    font-size: 14pt;
     position: relative;
     left: 50%;
-    transform: translateX(-50%);    
+    transform: translateX(-50%);
     transform-style: preserve-3d;
 
     cursor: copy;
@@ -483,13 +483,12 @@ font-size: 14pt;
     transform: translate3d(-50%, 0, 0);
     transform-style: preserve-3d;
     transition: top 0.2s, transform 0.2s;
-    
+
     background: white;
     padding: 9px;
 }
 
-.linc-area.copied > .linc-did-copy {
+.linc-area.copied>.linc-did-copy {
     top: 50%;
     transform: translate3d(-50%, -50%, 0);
 }
-
