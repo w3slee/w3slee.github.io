@@ -17,34 +17,38 @@
 <pubDate>Wed, 28 Apr 2021 13:26:55 +0300</pubDate>
 <description><![CDATA[
 <p>
-    This chapter is brought to you by... **"how not to flash openWRT"**. After trying to flash an openWRT build using the web interface of the router, the device got soft bricked and started flashing the led status lights on it. It wasn't able to fully boot up, hence shit wasn't working. After looking up fixes and how to's . I didn't get anything specific to the **TP-LINK WRN840** Series .
+    This chapter is brought to you by... **"how not to flash openWRT"**. When trying to flash an openWRT build for the router using the web interface, the device got soft bricked and became inoperable.
+    But hopefully their are generic guide on openwrt for solving such an issue
 </p>
 
 <div>
     <figure>
-        <img src="/imgs/tplinkmin.jpg" alt="">
+        <img src="/imgs/tplinkmin.png" alt="tplink_router_image">
         <figcaption> TP_LINK WRN840 Router</figcaption>
     </figure>
 </div>
-
+`
 <p>
-    This was an exciting short trip of another 'breaking it to learn it'. This was my approach.
-
     <h2 id="setup">The setup</h2>
-    <ol>
-        <li>Linux environment</li>
-        <li>TFTP server</li>
-        <li>Stock firmware for the router downladed from TP-Link official webpage for the WRN840Nv4 </li>
-        <li>OpenWRT firmware binary image file for the router</li>
-        <li>An ethernet cable / RJ45 cable</li>
-    </ol>
+    <li> OEM Stock Firmware : http://www.tp-link.com/en/download/TL-WR840N_V4.htmlFirmware </li>
+    <li> OpenWrt Firmware : http://downloads.openwrt.org/releases/19.07.7/targets/ramips/mt76x8/openwrt-19.07.7-ramips-mt76x8-tl-wr840n-v4-squashfs-sysupgrade.binFirmware
+    </li>
+    <li> OpenWrt Firmware Upgrade : http://downloads.openwrt.org/releases/19.07.7/targets/ramips/mt76x8/openwrt-19.07.7-ramips-mt76x8-tl-wr840n-v4-squashfs-tftp-recovery.bin
+    </li>
+
+    <li>Linux environment</li>
+    <li>TFTP server</li>
+    <dd></dd>
+    <li>An ethernet cable / RJ45 cable</li>
+
     <h2 id="bootproc">router boot process</h2>
 
-    Router performs a POST -> if it fails to load the firmware from flash memory -> it tries to load the file from the TFTP server
+    <p> Router performs a POST -> if it fails to load the firmware from flash memory -> it tries to load the file from the TFTP server
+    </p>
 
     <h2 id="ttsetup">TFTP Server Setup and Configuration </h2>
 
-    I installed dnsmasq (short for DNS masquerade) which is a lightweight, easy to configure DNS forwarder, designed to provide DNS (and optionally DHCP and TFTP) services to a small-scale network.
+    <p>I installed dnsmasq (short for DNS masquerade) which is a lightweight, easy to configure DNS forwarder, designed to provide DNS (and optionally DHCP and TFTP) services to a small-scale network.</p>
 
     <dl>
         <dt>install dnsmasq on your system if not yet installed then run the command below</dt>
@@ -59,13 +63,24 @@
         <dd>chown nobody:nogroup -R /srv/tftp</dd>
         <dt>Run TFTP server ( run as daemon, do not fork, log events to stdout</dt>
         <dd>atftpd --daemon --no-fork --logfile /srv/tftp</dd>
-        <dt>Checki if your TFTP server is listening</dt>
+        <dt>Check if your TFTP server is listening</dt>
         <dd>netsat -lunp | grep 69</dd>
-        if not set, you should try running TFTP server as superuser
+        <p>if not set, you should try running TFTP server as superuser. <br>Check that you can in fact pull the file from your tftp server.
+            Preferably from another computer, call your tftp server IP: (or if not possible, in same server call IP 0.0.0.0)
+            <dd>
+                # tftp 192.168.0.66
+                tftp> get tp_recovery.bin
+                Received 8152633 bytes in 0.8 seconds
+                tftp> quit
+            </dd>
+            <p>If you have received the file, congratulations, it's ready.</p>
+        </p>
     </dl>
 </p>
 ]]></description>
 </item>
+
+
 
 
 
