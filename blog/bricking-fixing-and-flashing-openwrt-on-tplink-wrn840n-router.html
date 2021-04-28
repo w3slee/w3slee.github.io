@@ -9,7 +9,7 @@
 <h1>Bricking ,Fixing and Flashing OpenWRT on TP-LINK WRN840N Router</h1>
 <a href='https://w3slee.github.io/#bricking-fixing-and-flashing-openwrt-on-tplink-wrn840n-router'>Home</a>
 <p>
-    This chapter is brought to you by... <b>how not to flash OpenWRT. </b>When trying to flash an openWRT build for the router using the web interface, the device got soft bricked and became inoperable.
+    This chapter is brought to you by...`How not to flash OpenWRT. When trying to flash an openWRT build` for the router using the web interface, the device got soft bricked and became inoperable.
     But hopefully their are generic guide on openwrt for solving such an issue
 </p>
 
@@ -24,52 +24,52 @@
     <h2 id="setup">The setup</h2>
     <p>
         OEM Stock Firmware : http://www.tp-link.com/en/download/TL-WR840N_V4.html
-        <br>
-        OpenWrt Firmware : http://downloads.openwrt.org/releases/19.07.7/targets/ramips/mt76x8/openwrt-19.07.7-ramips-mt76x8-tl-wr840n-v4-squashfs-sysupgrade.bin
-
-        OpenWrt Firmware Upgrade : http://downloads.openwrt.org/releases/19.07.7/targets/ramips/mt76x8/openwrt-19.07.7-ramips-mt76x8-tl-wr840n-v4-squashfs-tftp-recovery.bin
-
-        Linux environment
-
-        TFTP server
-
-        An ethernet / RJ45 cable
     </p>
+    <p>OpenWrt Firmware : http://downloads.openwrt.org/releases/19.07.7/targets/ramips/mt76x8/openwrt-19.07.7-ramips-mt76x8-tl-wr840n-v4-squashfs-sysupgrade.bin</p>
 
-    <h2 id="bootproc">router boot process</h2>
+    <p>OpenWrt Firmware Upgrade : http://downloads.openwrt.org/releases/19.07.7/targets/ramips/mt76x8/openwrt-19.07.7-ramips-mt76x8-tl-wr840n-v4-squashfs-tftp-recovery.bin</p>
 
-    <p> Router performs a POST -> if it fails to load the firmware from flash memory -> it tries to load the file from the TFTP server
+    <p>Linux environment</p>
+
+    <p>TFTP server</p>
+
+    <p>An ethernet / RJ45 cable</p>
+</p>
+</p>
+
+<h2 id="bootproc">router boot process</h2>
+
+<p> Router performs a POST -> if it fails to load the firmware from flash memory -> it tries to load the file from the TFTP server
+</p>
+
+<h2 id="ttsetup">TFTP Server Setup and Configuration </h2>
+
+<p>I installed dnsmasq (short for DNS masquerade) which is a lightweight, easy to configure DNS forwarder, designed to provide DNS (and optionally DHCP and TFTP) services to a small-scale network.</p>
+
+<dl>
+    <dt>install dnsmasq on your system if not yet installed then run the command below</dt>
+    <dd>dnsmasq --port=0 --enable-tftp --tftp-root=/path/to/firmware/directory --tftp-no-blocksize --user=root --group=root</dd>
+    <dt>check if your tftp sever is listening</dt>
+    <dd>netsat -lunp | grep 69</dd>
+    <dt>Create a directory where you want to put the image file</dt>
+    <dd>mkdir /srv/tftp</dd>
+    <dt> Put an image file into youe directory - actual name will vary</dt>
+    <dd> cp ~/tp_recovery.bin /srv/tftp</dd>
+    <dt>Change the ownership of the folder and the file in it</dt>
+    <dd>chown nobody:nogroup -R /srv/tftp</dd>
+    <dt>Run TFTP server ( run as daemon, do not fork, log events to stdout</dt>
+    <dd>atftpd --daemon --no-fork --logfile /srv/tftp</dd>
+    <dt>Check if your TFTP server is listening</dt>
+    <dd>netsat -lunp | grep 69</dd>
+    <p>if not set, you should try running TFTP server as superuser. <br>Check that you can in fact pull the file from your tftp server.
+        Preferably from another computer, call your tftp server IP: (or if not possible, in same server call IP 0.0.0.0)
+        <dd># tftp 192.168.0.66</dd>
+        <dd>tftp > get tp_recovery.bin</dd>
+        <dd>Received 8152633 bytes in 0.8 seconds</dd>
+        <dd> tftp> quit</dd>
+        <p>If you have received the file, congratulations, it's ready.</p>
     </p>
-
-    <h2 id="ttsetup">TFTP Server Setup and Configuration </h2>
-
-    <p>I installed dnsmasq (short for DNS masquerade) which is a lightweight, easy to configure DNS forwarder, designed to provide DNS (and optionally DHCP and TFTP) services to a small-scale network.</p>
-
-    <dl>
-        <dt>install dnsmasq on your system if not yet installed then run the command below</dt>
-        <dd>dnsmasq --port=0 --enable-tftp --tftp-root=/path/to/firmware/directory --tftp-no-blocksize --user=root --group=root</dd>
-        <dt>check if your tftp sever is listening</dt>
-        <dd>netsat -lunp | grep 69</dd>
-        <dt>Create a directory where you want to put the image file</dt>
-        <dd>mkdir /srv/tftp</dd>
-        <dt> Put an image file into youe directory - actual name will vary</dt>
-        <dd> cp ~/tp_recovery.bin /srv/tftp</dd>
-        <dt>Change the ownership of the folder and the file in it</dt>
-        <dd>chown nobody:nogroup -R /srv/tftp</dd>
-        <dt>Run TFTP server ( run as daemon, do not fork, log events to stdout</dt>
-        <dd>atftpd --daemon --no-fork --logfile /srv/tftp</dd>
-        <dt>Check if your TFTP server is listening</dt>
-        <dd>netsat -lunp | grep 69</dd>
-        <p>if not set, you should try running TFTP server as superuser. <br>Check that you can in fact pull the file from your tftp server.
-            Preferably from another computer, call your tftp server IP: (or if not possible, in same server call IP 0.0.0.0)
-
-            <dd># tftp 192.168.0.66</dd>
-            <dd>tftp > get tp_recovery.bin</dd>
-            <dd>Received 8152633 bytes in 0.8 seconds</dd>
-            <dd> tftp> quit</dd>
-            <p>If you have received the file, congratulations, it's ready.</p>
-        </p>
-    </dl>
+</dl>
 </p>
 </body>
 <footer id="homefoot"><div id="sweetnav">
