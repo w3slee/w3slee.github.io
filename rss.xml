@@ -32,7 +32,7 @@
     <h2 id="setup">The setup</h2>
     <p>
         OEM Stock Firmware : http://www.tp-link.com/en/download/TL-WR840N_V4.html
-
+        <br>
         OpenWrt Firmware : http://downloads.openwrt.org/releases/19.07.7/targets/ramips/mt76x8/openwrt-19.07.7-ramips-mt76x8-tl-wr840n-v4-squashfs-sysupgrade.bin
 
         OpenWrt Firmware Upgrade : http://downloads.openwrt.org/releases/19.07.7/targets/ramips/mt76x8/openwrt-19.07.7-ramips-mt76x8-tl-wr840n-v4-squashfs-tftp-recovery.bin
@@ -70,18 +70,19 @@
         <dd>netsat -lunp | grep 69</dd>
         <p>if not set, you should try running TFTP server as superuser. <br>Check that you can in fact pull the file from your tftp server.
             Preferably from another computer, call your tftp server IP: (or if not possible, in same server call IP 0.0.0.0)
-            <dd>
-                # tftp 192.168.0.66
-                tftp> get tp_recovery.bin
-                Received 8152633 bytes in 0.8 seconds
-                tftp> quit
-            </dd>
+
+            <dd># tftp 192.168.0.66</dd>
+            <dd>tftp > get tp_recovery.bin</dd>
+            <dd>Received 8152633 bytes in 0.8 seconds</dd>
+            <dd> tftp> quit</dd>
             <p>If you have received the file, congratulations, it's ready.</p>
         </p>
     </dl>
 </p>
 ]]></description>
 </item>
+
+
 
 
 

@@ -97,7 +97,21 @@ h1[id] {
 
 p {
     color: rgb(255, 255, 255);
+    padding: 15px;
+    text-align: left;
+    /* background: #222; */
+    background: #0E6655;
+    /* border: 1px dotted rgb(248, 248, 248); */
+    -moz-box-shadow: inset 0 0 10px #1a1919;
+    -webkit-box-shadow: inset 0 0 10px #0c0c0c;
+    box-shadow: inset 0 0 10px #070707;
+    font-size: 17pt;
+    font-family: 'Fira Code', monospace;
+}
 
+
+br {
+    color: rgb(255, 255, 255);
     padding: 15px;
     text-align: left;
     /* background: #222; */
