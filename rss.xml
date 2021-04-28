@@ -12,6 +12,18 @@
 <!-- LB -->
 
 <item>
+<title>Bricking ,Fixing and Flashing OpenWRT on TP-LINK WRN840N Router</title>
+<guid>https://w3slee.github.io/2021.html#bricking-fixing-and-flashing-openwrt-on-tplink-wrn840n-router</guid>
+<pubDate>Wed, 28 Apr 2021 13:26:55 +0300</pubDate>
+<description><![CDATA[
+<p>
+This chapter is brought to you by ; :sweat_smile: **"how not to flash openWRT"**. After trying to flash an openWRT build using the web interface of the router, the device got soft bricked and started flashing the led status lights on it. It wasn't able to fully boot up, hence shit wasn't working. After looking up fixes and how to's . I didn't get anything specific to the **TP-LINK WRN840** Series .
+</p>
+]]></description>
+</item>
+
+
+<item>
 <title>MILK COOKIES FOR SANTA</title>
 <guid>https://w3slee.github.io/2021.html#milk-cookies-for-santa</guid>
 <pubDate>Mon, 19 Apr 2021 11:52:37 +0300</pubDate>
