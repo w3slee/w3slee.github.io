@@ -57,18 +57,18 @@
 
     Ok let's begin with the juicy technicals, this week I got two devices. An infinix X657 and a Tecno F2.
 
+    The infinix device had the following specifications if you view them from the settings options in the android settings
+    
+    32GB internal memory with 2 Gigs of RAM, running on android version 9. All these are fake properties
 </p>
 
 <dd>
-
-    The infinix device had the following specifications 32GB internal memory with 2 Gigs of RAM. Running on android
-    version 9
+    Running <mark>adb shell getprop ro.buid.version.release</mark> gives us the correct device properties
     <fig>
         <img src="/imgs/infinixsize.png" alt="correct_android_properties">
         <figcaption> correct Infinix android properties </figcaption>
     </fig>
 </dd>
-<p> Running <mark>adb shell getprop ro.buid.version.release</mark> gives us the correct device properties</p>
 <dd>
 
     <fig>
@@ -78,8 +78,8 @@
 </dd>
 
 <dd>
-    The Tecno device had the following specifications 8GB internal memory with 1 Gigs of RAM. Running on android version
-    6. The original runs android 7.0 (Nougat)
+    The Tecno device also had the fake specifications; 8GB internal memory with 1 Gig of RAM, running on android version
+    6. The original device runs android 7.0 (Nougat)
 </dd>
 
 <dd>
@@ -97,6 +97,9 @@
 <p>
     These kind of devices are all over the market and very hard to detect it's flaws from unexperienced
     consumers.
+    
+    When buying an expensive looking device, it shouldn't be cheap 😂 
+
     Stay educated !
 </p>'></a>]</div>
 `
