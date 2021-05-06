@@ -11,6 +11,63 @@
 
 <!-- LB -->
 
+<item>
+<title>Spoting Mediatek Fakes</title>
+<guid>https://w3slee.github.io/2021.html#spoting-mediatek-fakes</guid>
+<pubDate>Thu, 06 May 2021 14:15:12 +0300</pubDate>
+<description><![CDATA[
+<figure>
+    <img src="/imgs/devices.png" alt="infinix_teno_android_device">
+</figure>
+<p>
+Aparently that's why you'll see very many people owning 'high end' flagship devices
+from the third world Kenya. The common and popular brands Infinix and Tecno have flooded the Kenyan market
+making the counterfeiters hard at work, pumping in the fakes.
+
+It's not hard to spot a fake by an average consumer who hopefully uses original devices.
+The give aways usually start on the screen. Devices claiming to have UHD / FHD displays
+ending up looking so 'plasticky'. And when the light from the sun hits the display 
+it almost looks like a calculators LCD.
+
+Ok let's begin with the juicy technicals, this week I got two devices. An infinix X657 and a Tecno F2.
+
+The infinix device had the following specifications
+</p>
+
+<dd>
+32GB internal memory with 2 Gigs of RAM. Running on android version 9
+<fig>
+    <img src="/imgs/infinixsize.png" alt="correct_android_properties">
+    <figcaption> correct Infinix android properties </figcaption>
+    </fig>
+</dd>
+<p> Running <code>adb shell getprop ro.buid.version.release</code> gives us the correct device properties</p>
+<fig>
+    <img src="/imgs/infinix_build.png" alt="correct_android_properties">
+    <figcaption> correct Infinix android properties </figcaption>
+    </fig>
+<p>The Tecno device had the following specifications
+</p>
+<dd>
+8GB internal memory with 1 Gigs of RAM. Running on android version 6. The original runs android 7.0 (Nougat)
+</dd>
+<fig>
+<img src="/imgs/tecnof2build.png" alt="correct_android_properties">
+<figcaption> correct Tecno android properties </figcaption>
+</fig>
+<fig>
+    <img src="/imgs/tecnof2size.png" alt="correct_android_properties">
+    <figcaption> correct Tecno android properties </figcaption>
+    </fig>
+<p>
+These kind of devices are all over the market and very hard to detect it's flaws from unexperienced
+consumers. 
+Stay educated !
+</p>
+]]></description>
+</item>
+
+
 
 
 
