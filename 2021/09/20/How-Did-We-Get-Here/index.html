@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en" color-mode="light">
+
+  <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="keywords" content="" />
+  <meta name="author" content="w3slee" />
+  <meta name="description" content="" />
+  
+  
+  <title>
+    
+      How Did We Get Here 
+      
+      
+      |
+    
+     Tekxted
+  </title>
+
+  
+    <link rel="apple-touch-icon" href="/images/favicon.png">
+    <link rel="icon" href="/images/favicon.png">
+  
+
+  <!-- Raleway-Font -->
+  <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+
+  <!-- hexo site css -->
+  
+<link rel="stylesheet" href="/css/color-scheme.css">
+<link rel="stylesheet" href="/css/base.css">
+<link rel="stylesheet" href="/iconfont/iconfont.css">
+<link rel="stylesheet" href="/css/github-markdown.css">
+<link rel="stylesheet" href="/css/highlight.css">
+<link rel="stylesheet" href="/css/comments.css">
+
+
+  <!-- jquery3.3.1 -->
+  <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+
+  <!-- fancybox -->
+  <link href="https://cdn.bootcss.com/fancybox/3.5.2/jquery.fancybox.min.css" rel="stylesheet">
+  <script async src="https://cdn.bootcss.com/fancybox/3.5.2/jquery.fancybox.min.js"></script>
+  
+<script src="/js/fancybox.js"></script>
+
+
+  
+
+  <script>
+    var html = document.documentElement
+    const colorMode = localStorage.getItem('color-mode')
+    if (colorMode) {
+      document.documentElement.setAttribute('color-mode', colorMode)
+    }
+  </script>
+
+<meta name="generator" content="Hexo 5.4.0"></head>
+
+
+  <body>
+    <div id="app">
+      <div class="header">
+  <div class="avatar">
+    <a href="/">
+      <!-- 头像取消懒加载，添加no-lazy -->
+      
+        <img src="/images/avatar.png" alt="">
+      
+    </a>
+    <div class="nickname"><a href="/">mch1nen</a></div>
+  </div>
+  <div class="navbar">
+    <ul>
+      
+        <li class="nav-item" data-path="/">
+          <a href="/">Home</a>
+        </li>
+      
+        <li class="nav-item" data-path="/archives/">
+          <a href="/archives/">Archives</a>
+        </li>
+      
+        <li class="nav-item" data-path="/about/">
+          <a href="/about/">About</a>
+        </li>
+      
+    </ul>
+  </div>
+</div>
+
+
+<script src="/js/activeNav.js"></script>
+
+
+
+      <div class="flex-container">
+        <!-- 文章详情页，展示文章具体内容，url形式：https://yoursite/文章标题/ -->
+<!-- 同时为「标签tag」，「朋友friend」，「分类categories」，「关于about」页面的承载页面，具体展示取决于page.type -->
+
+<!-- LaTex Display -->
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script type="text/javascript" id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
+</script>
+<script>
+MathJax = {
+  tex: {
+    inlineMath: [['$', '$'], ['\\(', '\\)']]
+  }
+};
+</script>
+
+
+
+  
+
+  
+
+  
+
+  
+  <!-- 文章内容页 url形式：https://yoursite/文章标题/ -->
+  <div class="container post-details" id="post-details">
+    <div class="post-content">
+      <div class="post-title">How Did We Get Here</div>
+      <div class="post-attach">
+        <span class="post-pubtime">
+          <i class="iconfont icon-updatetime" title="Update time"></i>
+          2021-09-20 18:15:39
+        </span>
+        
+      </div>
+      <div class="markdown-body">
+        <p>Tales of reading the fun manual an finally profiting 💰</p>
+<p><img src="/images/ciu.png" alt="meter"></p>
+<p>The above image is sometimes a conversation starter in Kenya, like discussing who is has a power running low at their house.<br>The loud beeping sound that this module emits when the ‘token’ ( refered to as the credit score in the meter denoting the current units of power left / just like a prepaid card for your mobile subscription) will send crickets on an epic migration to a less noisy habitat.<br>, Let’s geek out !.</p>
+<p>The above is a Single Phase two wire prepaid keypad Energy Meter, ~ phase refers to the distribution of a load. You can read more about that from the Google.<br>It is designed to be used for the prepayment of electricity before power if supplied to any household.</p>
+<h2 id="Main-Functions"><a href="#Main-Functions" class="headerlink" title="Main Functions"></a>Main Functions</h2><ul>
+<li>energy measurement</li>
+<li>communication</li>
+<li>prepayment</li>
+<li>data display</li>
+<li>anti-tampering</li>
+<li>keypad input &amp; inquiry</li>
+</ul>
+<p>From the manual</p>
+<h2 id="Highlights"><a href="#Highlights" class="headerlink" title="Highlights"></a>Highlights</h2><p>The interface is based on Standard Transfer Protocol, which is an open source standard and the only international specification on prepaid system</p>
+<p>DLMS/COSEMC communication protocol, which ensures good interoperability</p>
+<p>Recharge information is transferred in the form of TOKEN</p>
+<p>Built-in contractor and varied control methods are supported</p>
+<p>Pluggable PLC/GPRS module supports remote communication.</p>
+<p>The meter has a energy measuring unit that can do voltage &amp; and current sampling in the ICU.<br>It has a data processing unit comprising of an MCU and memory. A power supply unit, I/O unit which is the LCD display, neat features like PLC/GPRS communication and optical port. A load control unit which is handled by the contractor</p>
+<p><img src="/images/schema.png" alt="schema"></p>
+<h2 id="Communication-Interface"><a href="#Communication-Interface" class="headerlink" title="Communication Interface"></a>Communication Interface</h2><p>The meter has one optical communication port, and one PLC/GPRS communication port(only one communication module between PLC and GPRS can be chosen for one meter).<br>The two communication interfaces are independent from each other, thus, failure of one communication interface will not affect the other.</p>
+<h2 id="PLC-Communication"><a href="#PLC-Communication" class="headerlink" title="PLC Communication"></a>PLC Communication</h2><p>The PLC communicates at a Baud rate of 4800bps, 8 data digits and without check digit. The meter reading can be realized through DCU via PLC communication in AMI network with a pluggable PLC comms module same spec for the GPRS communication</p>
+<p>In order to recharge , a client purchases electricity and a 20-digit TOKEN is generated for the amount bought. The token is entered into the ciu by keying in the digits. The meter displays status codes after the token is entered.</p>
+<h3 id="successfull-recharge"><a href="#successfull-recharge" class="headerlink" title="successfull recharge"></a>successfull recharge</h3><p>Credit on the meter should have an increased score.</p>
+<h3 id="01"><a href="#01" class="headerlink" title="01"></a>01</h3><p>When the token is wrong</p>
+<h3 id="02"><a href="#02" class="headerlink" title="02"></a>02</h3><p>When the token has already been used</p>
+<h3 id="03"><a href="#03" class="headerlink" title="03"></a>03</h3><p>When the token has expired</p>
+<h3 id="04"><a href="#04" class="headerlink" title="04"></a>04</h3><p>Expired security key</p>
+<h3 id="05"><a href="#05" class="headerlink" title="05"></a>05</h3><p>When charging amount exceeds the accumulated charging amount limit, meter displays</p>
+<p>The meter has different types of Tokens , an interesting one is the Test Token which could be used to test any prepayment keypad meter which is compliant with STS (Standard transfer specification) , which is the Standard Transfer Specification that mainly provides the reference for the realization of electricity meter encryption, decryption and prepayment.</p>
+<h2 id="TEST-TOKENS"><a href="#TEST-TOKENS" class="headerlink" title="TEST TOKENS"></a>TEST TOKENS</h2><h3 id="contractor-test"><a href="#contractor-test" class="headerlink" title="contractor test"></a>contractor test</h3><p><code>0000-0000-0001-5099-7584</code></p>
+<h3 id="LCD-Test"><a href="#LCD-Test" class="headerlink" title="LCD Test"></a>LCD Test</h3><p><code>0000-0000-0001-6777-4880</code></p>
+<h3 id="Display-total-active-forward-energy"><a href="#Display-total-active-forward-energy" class="headerlink" title="Display total active forward energy"></a>Display total active forward energy</h3><p><code>0000-0000-0002-0132-8896</code></p>
+<h3 id="Display-security-key-version"><a href="#Display-security-key-version" class="headerlink" title="Display security key version"></a>Display security key version</h3><p><code>1844-6744-0738-4377-2416</code></p>
+<h3 id="Display-tarrif-index"><a href="#Display-tarrif-index" class="headerlink" title="Display tarrif index"></a>Display tarrif index</h3><p><code>3689-3488-1475-5332-2496</code></p>
+<h3 id="Display-maximum-power"><a href="#Display-maximum-power" class="headerlink" title="Display maximum power"></a>Display maximum power</h3><p><code>0000-0000-0012-0797-4400</code></p>
+<h3 id="Display-meter-status"><a href="#Display-meter-status" class="headerlink" title="Display meter status"></a>Display meter status</h3><p><code>0000-0000-0022-8172-8512</code></p>
+<h3 id="Display-instantaneous-power"><a href="#Display-instantaneous-power" class="headerlink" title="Display instantaneous power"></a>Display instantaneous power</h3><p><code>0000-0000-0044-2920-8064</code></p>
+<h3 id="Display-meter-version-Number"><a href="#Display-meter-version-Number" class="headerlink" title="Display meter version Number."></a>Display meter version Number.</h3><p><code>0000-0000-0087-2419-5840</code></p>
+<h3 id="Complete-test"><a href="#Complete-test" class="headerlink" title="Complete test"></a>Complete test</h3><p><code>5649-3153-7254-5031-3471</code></p>
+<p>Make contactor test, LCD display test, display total active forward energy test, display security key version test, and display tariff index display in turn.<br>The interval between each test shall be 8s~10s.</p>
+<h2 id="Short-codes"><a href="#Short-codes" class="headerlink" title="Short codes"></a>Short codes</h2><p>The meter has a series of short codes that return interesting results. I believe these are the most useful</p>
+<h3 id="credit-balance"><a href="#credit-balance" class="headerlink" title="credit balance"></a>credit balance</h3><p><code>801</code> : Display token balance</p>
+<h3 id="Emergency-credit"><a href="#Emergency-credit" class="headerlink" title="Emergency credit"></a>Emergency credit</h3><p><code>811</code> This is how we got here, with this code , you can get an Emergency token which can be activated after your tokens run out, giving you 10 Tokens depending on your overdraft limit</p>
+<h3 id="Overdraft-limit"><a href="#Overdraft-limit" class="headerlink" title="Overdraft limit"></a>Overdraft limit</h3><p><code>810</code> </p>
+<h3 id="meter-serial-number"><a href="#meter-serial-number" class="headerlink" title="meter serial number"></a>meter serial number</h3><p><code>804</code></p>
+<h3 id="meter-status"><a href="#meter-status" class="headerlink" title="meter status"></a>meter status</h3><p><code>807</code></p>
+<h3 id="Tarrif-index"><a href="#Tarrif-index" class="headerlink" title="Tarrif index"></a>Tarrif index</h3><p><code>809</code></p>
+<h3 id="Token-code-of-last-recharge"><a href="#Token-code-of-last-recharge" class="headerlink" title="Token code of last recharge"></a>Token code of last recharge</h3><p><code>830</code></p>
+<h3 id="Disable-audible-alarm"><a href="#Disable-audible-alarm" class="headerlink" title="Disable audible alarm"></a>Disable audible alarm</h3><p><code>812</code></p>
+<h3 id="Last-recharge-amount"><a href="#Last-recharge-amount" class="headerlink" title="Last recharge amount"></a>Last recharge amount</h3><p><code>817</code></p>
+<h3 id="Times-of-Power-off"><a href="#Times-of-Power-off" class="headerlink" title="Times of Power off"></a>Times of Power off</h3><p><code>819</code></p>
+<h3 id="Return-logoff-TOKEN"><a href="#Return-logoff-TOKEN" class="headerlink" title="Return logoff TOKEN"></a>Return logoff TOKEN</h3><p><code>818</code></p>
+<p><img src="/images/jtag.png" alt="jtagPort"></p>
+<p>Sometimes good things hide in plain sight, ‘usikae kwa giza !’, I did take the module apart and YES! it has JTAG support which allows us to interact with the processor over serial communication for debugging capabilities, I don’t have any JTAG cables :-( laying around at the moment<br>next up is getting into the system !)</p>
+
+      </div>
+      
+        <div class="prev-or-next">
+          <div class="post-foot-next">
+            
+              <a href="/2020/03/20/MediatekFakes/" target="_self">
+                <i class="iconfont icon-chevronleft"></i>
+                <span>Prev</span>
+              </a>
+            
+          </div>
+          <div class="post-attach">
+            <span class="post-pubtime">
+              <i class="iconfont icon-updatetime" title="Update time"></i>
+              2021-09-20 18:15:39
+            </span>
+            
+          </div>
+          <div class="post-foot-prev">
+            
+          </div>
+        </div>
+      
+    </div>
+    
+  <div id="btn-catalog" class="btn-catalog">
+    <i class="iconfont icon-catalog"></i>
+  </div>
+  <div class="post-catalog hidden" id="catalog">
+    <div class="title">Contents</div>
+    <div class="catalog-content">
+      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Main-Functions"><span class="toc-text">Main Functions</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Highlights"><span class="toc-text">Highlights</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Communication-Interface"><span class="toc-text">Communication Interface</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#PLC-Communication"><span class="toc-text">PLC Communication</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#successfull-recharge"><span class="toc-text">successfull recharge</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#01"><span class="toc-text">01</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#02"><span class="toc-text">02</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#03"><span class="toc-text">03</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#04"><span class="toc-text">04</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#05"><span class="toc-text">05</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#TEST-TOKENS"><span class="toc-text">TEST TOKENS</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#contractor-test"><span class="toc-text">contractor test</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#LCD-Test"><span class="toc-text">LCD Test</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Display-total-active-forward-energy"><span class="toc-text">Display total active forward energy</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Display-security-key-version"><span class="toc-text">Display security key version</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Display-tarrif-index"><span class="toc-text">Display tarrif index</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Display-maximum-power"><span class="toc-text">Display maximum power</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Display-meter-status"><span class="toc-text">Display meter status</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Display-instantaneous-power"><span class="toc-text">Display instantaneous power</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Display-meter-version-Number"><span class="toc-text">Display meter version Number.</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Complete-test"><span class="toc-text">Complete test</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Short-codes"><span class="toc-text">Short codes</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#credit-balance"><span class="toc-text">credit balance</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Emergency-credit"><span class="toc-text">Emergency credit</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Overdraft-limit"><span class="toc-text">Overdraft limit</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#meter-serial-number"><span class="toc-text">meter serial number</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#meter-status"><span class="toc-text">meter status</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Tarrif-index"><span class="toc-text">Tarrif index</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Token-code-of-last-recharge"><span class="toc-text">Token code of last recharge</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Disable-audible-alarm"><span class="toc-text">Disable audible alarm</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Last-recharge-amount"><span class="toc-text">Last recharge amount</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Times-of-Power-off"><span class="toc-text">Times of Power off</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Return-logoff-TOKEN"><span class="toc-text">Return logoff TOKEN</span></a></li></ol></li></ol>
+    </div>
+  </div>
+
+  
+<script src="/js/catalog.js"></script>
+
+
+
+
+    
+      <div class="comments-container">
+        
+
+
+
+
+
+      </div>
+    
+  </div>
+
+
+        <div class="footer">
+  <div class="social">
+    <ul>
+      
+        <li>
+          <a title="github" target="_blank" rel="noopener" href="https://github.com/mch1nen/">
+            <i class="iconfont icon-github"></i>
+          </a>
+        </li>
+      
+        <li>
+          <a title="twitter" target="_blank" rel="noopener" href="https://twitter.com/mch1nen">
+            <i class="iconfont icon-twitter"></i>
+          </a>
+        </li>
+      
+        <li>
+          <a title="rss" href="/atom.xml">
+            <i class="iconfont icon-rss"></i>
+          </a>
+        </li>
+      
+    </ul>
+  </div>
+  
+    <div class="footer-more">
+      
+        <a target="_blank" rel="noopener" href="https://twitter.com/mch1nen">Copyright © w3slee 2021</a>
+        
+    </div>
+  
+</div>
+
+      </div>
+
+      <div class="tools-bar">
+        <div class="back-to-top tools-bar-item hidden">
+  <a href="javascript: void(0)">
+    <i class="iconfont icon-chevronup"></i>
+  </a>
+</div>
+
+
+<script src="/js/backtotop.js"></script>
+
+
+
+        
+  <div class="search-icon tools-bar-item" id="search-icon">
+    <a href="javascript: void(0)">
+      <i class="iconfont icon-search"></i>
+    </a>
+  </div>
+
+  <div class="search-overlay hidden">
+    <div class="search-content" tabindex="0">
+      <div class="search-title">
+        <span class="search-icon-input">
+          <a href="javascript: void(0)">
+            <i class="iconfont icon-search"></i>
+          </a>
+        </span>
+        
+          <input type="text" class="search-input" id="search-input" placeholder="Search...">
+        
+        <span class="search-close-icon" id="search-close-icon">
+          <a href="javascript: void(0)">
+            <i class="iconfont icon-close"></i>
+          </a>
+        </span>
+      </div>
+      <div class="search-result" id="search-result"></div>
+    </div>
+  </div>
+
+  <script type="text/javascript">
+    var inputArea = document.querySelector("#search-input")
+    var searchOverlayArea = document.querySelector(".search-overlay")
+
+    inputArea.onclick = function() {
+      getSearchFile()
+      this.onclick = null
+    }
+
+    inputArea.onkeydown = function() {
+      if(event.keyCode == 13)
+        return false
+    }
+
+    function openOrHideSearchContent() {
+      let isHidden = searchOverlayArea.classList.contains('hidden')
+      if (isHidden) {
+        searchOverlayArea.classList.remove('hidden')
+        document.body.classList.add('hidden')
+        // inputArea.focus()
+      } else {
+        searchOverlayArea.classList.add('hidden')
+        document.body.classList.remove('hidden')
+      }
+    }
+
+    function blurSearchContent(e) {
+      if (e.target === searchOverlayArea) {
+        openOrHideSearchContent()
+      }
+    }
+
+    document.querySelector("#search-icon").addEventListener("click", openOrHideSearchContent, false)
+    document.querySelector("#search-close-icon").addEventListener("click", openOrHideSearchContent, false)
+    searchOverlayArea.addEventListener("click", blurSearchContent, false)
+
+    var searchFunc = function (path, search_id, content_id) {
+      'use strict';
+      var $input = document.getElementById(search_id);
+      var $resultContent = document.getElementById(content_id);
+      $resultContent.innerHTML = "<ul><span class='local-search-empty'>First search, index file loading, please wait...<span></ul>";
+      $.ajax({
+        // 0x01. load xml file
+        url: path,
+        dataType: "xml",
+        success: function (xmlResponse) {
+          // 0x02. parse xml file
+          var datas = $("entry", xmlResponse).map(function () {
+            return {
+              title: $("title", this).text(),
+              content: $("content", this).text(),
+              url: $("url", this).text()
+            };
+          }).get();
+          $resultContent.innerHTML = "";
+
+          $input.addEventListener('input', function () {
+            // 0x03. parse query to keywords list
+            var str = '<ul class=\"search-result-list\">';
+            var keywords = this.value.trim().toLowerCase().split(/[\s\-]+/);
+            $resultContent.innerHTML = "";
+            if (this.value.trim().length <= 0) {
+              return;
+            }
+            // 0x04. perform local searching
+            datas.forEach(function (data) {
+              var isMatch = true;
+              var content_index = [];
+              if (!data.title || data.title.trim() === '') {
+                data.title = "Untitled";
+              }
+              var orig_data_title = data.title.trim();
+              var data_title = orig_data_title.toLowerCase();
+              var orig_data_content = data.content.trim().replace(/<[^>]+>/g, "");
+              var data_content = orig_data_content.toLowerCase();
+              var data_url = data.url;
+              var index_title = -1;
+              var index_content = -1;
+              var first_occur = -1;
+              // only match artiles with not empty contents
+              if (data_content !== '') {
+                keywords.forEach(function (keyword, i) {
+                  index_title = data_title.indexOf(keyword);
+                  index_content = data_content.indexOf(keyword);
+
+                  if (index_title < 0 && index_content < 0) {
+                    isMatch = false;
+                  } else {
+                    if (index_content < 0) {
+                      index_content = 0;
+                    }
+                    if (i == 0) {
+                      first_occur = index_content;
+                    }
+                    // content_index.push({index_content:index_content, keyword_len:keyword_len});
+                  }
+                });
+              } else {
+                isMatch = false;
+              }
+              // 0x05. show search results
+              if (isMatch) {
+                str += "<li><a href='" + data_url + "' class='search-result-title'>" + orig_data_title + "</a>";
+                var content = orig_data_content;
+                if (first_occur >= 0) {
+                  // cut out 100 characters
+                  var start = first_occur - 20;
+                  var end = first_occur + 80;
+
+                  if (start < 0) {
+                    start = 0;
+                  }
+
+                  if (start == 0) {
+                    end = 100;
+                  }
+
+                  if (end > content.length) {
+                    end = content.length;
+                  }
+
+                  var match_content = content.substr(start, end);
+
+                  // highlight all keywords
+                  keywords.forEach(function (keyword) {
+                    var regS = new RegExp(keyword, "gi");
+                    match_content = match_content.replace(regS, "<span class=\"search-keyword\">" + keyword + "</span>");
+                  });
+
+                  str += "<p class=\"search-result-abstract\">" + match_content + "...</p>"
+                }
+                str += "</li>";
+              }
+            });
+            str += "</ul>";
+            if (str.indexOf('<li>') === -1) {
+              return $resultContent.innerHTML = "<ul><span class='local-search-empty'>No result<span></ul>";
+            }
+            $resultContent.innerHTML = str;
+          });
+        },
+        error: function(xhr, status, error) {
+          $resultContent.innerHTML = ""
+          if (xhr.status === 404) {
+            $resultContent.innerHTML = "<ul><span class='local-search-empty'>The search.xml file was not found, please refer to：<a href='https://github.com/zchengsite/hexo-theme-oranges#configuration' target='_black'>configuration</a><span></ul>";
+          } else {
+            $resultContent.innerHTML = "<ul><span class='local-search-empty'>The request failed, Try to refresh the page or try again later.<span></ul>";
+          }
+        }
+      });
+      $(document).on('click', '#search-close-icon', function() {
+        $('#search-input').val('');
+        $('#search-result').html('');
+      });
+    }
+
+    var getSearchFile = function() {
+        var path = "/search.xml";
+        searchFunc(path, 'search-input', 'search-result');
+    }
+  </script>
+
+
+
+
+        
+  <div class="tools-bar-item theme-icon" id="switch-color-scheme">
+    <a href="javascript: void(0)">
+      <i id="theme-icon" class="iconfont icon-moon"></i>
+    </a>
+  </div>
+
+  
+<script src="/js/colorscheme.js"></script>
+
+
+
+
+
+        
+  
+    <div class="share-icon tools-bar-item">
+      <a href="javascript: void(0)" id="share-icon">
+        <i class="iconfont iconshare"></i>
+      </a>
+      <div class="share-content hidden">
+        
+          <a class="share-item" href="https://twitter.com/intent/tweet?text=' + How%20Did%20We%20Get%20Here + '&url=' + http%3A%2F%2Fexample.com%2F2021%2F09%2F20%2FHow-Did-We-Get-Here%2F + '" target="_blank" title="Twitter">
+            <i class="iconfont icon-twitter"></i>
+          </a>
+        
+        
+          <a class="share-item" href="https://www.facebook.com/sharer.php?u=http://example.com/2021/09/20/How-Did-We-Get-Here/" target="_blank" title="Facebook">
+            <i class="iconfont icon-facebooksquare"></i>
+          </a>
+        
+      </div>
+    </div>
+  
+  
+<script src="/js/shares.js"></script>
+
+
+
+      </div>
+    </div>
+  </body>
+</html>
