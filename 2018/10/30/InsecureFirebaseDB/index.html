@@ -133,7 +133,7 @@ MathJax = {
       <div class="post-attach">
         <span class="post-pubtime">
           <i class="iconfont icon-updatetime" title="Update time"></i>
-          2021-09-20 17:14:06
+          2018-10-30 17:14:06
         </span>
         
               <span class="post-tags">
@@ -175,22 +175,35 @@ MathJax = {
 </ol>
 <p>You can look up what the permissions mean here : android developer docs After the app checks on your eligibility to be offered the requested loan amount. If successfull the funds are instantly transferred to your MPESA. Accepting the absurd interest rate and penalty if you default. With popular apps like Tala and Branch many similar applications have been lauched into the playstore some looking like outright scams. And the applications seem to be built using Rapid Android Application Development Frameworks. Which allow you to create an android app with little or sometimes writing no code.</p>
 <p>Let’s look at Ganji, with thousands of downloads was popular on playstore. Never seen it before, so I decided to take a look at it.<br>Mostly I read on the apps reviews to find out what the user experience is . Seemed sane with the common “ why have you not given me a loan yet I qualify “ rants</p>
+<h2 id="🪲-Foreplay-static-analysis"><a href="#🪲-Foreplay-static-analysis" class="headerlink" title="🪲 Foreplay : static analysis"></a>🪲 Foreplay : static analysis</h2><h3 id="HASH"><a href="#HASH" class="headerlink" title="HASH"></a>HASH</h3><p><code>MD5: 2f11e6e52ba1ab6db967b841e395d22f</code><br><code>SHA1: 37806fe466c8252934ead66071aab4fd584d0647</code><br><code>SHA256: 3750e569684cb2fec0291f19725476b9b37d777c73920b0aff6c8b0448fc0253</code></p>
+<h3 id="APP-INFORMATION"><a href="#APP-INFORMATION" class="headerlink" title="APP INFORMATION"></a>APP INFORMATION</h3><p> <code>Package Name: com.ganjipayments</code><br> <code>Android Version Name: 1.1.1.16</code></p>
+<p>Now comes the interesting bit, after looking into some of the url the android application was interacting with , I immediatly had a smirk😏 on my face.Well boys and girls this seems like it isn’t going to take much long.</p>
+<p>Diving into <strong>res/values/strings.xml</strong>, where all application strings are; I saw this gem 🙅🏽‍♀️ <a target="_blank" rel="noopener" href="https://ganji-35361.firebaseio.com/">https://ganji-35361.firebaseio.com/</a> 🙅🏽‍♀️</p>
+<p>Appending .json to the url after the trailing slash, making it <a target="_blank" rel="noopener" href="https://ganji-35361.firebaseio.com/.json">https://ganji-35361.firebaseio.com/.json</a> dumped all data in the database on the web. Simply put ,the database is publicly exposed and an attacker can very easily perform queries into the database , create, update and delete data from the database.</p>
+<p>I wasn’t going to do that because of the <strong>‘ethics’</strong>, what did I find though :</p>
+<p>This is where i’ll throw in the phrase , “even a kid could do it” , no need for hooking up debuggers or even deobfuscating the source code</p>
+<h2 id="📑-findings"><a href="#📑-findings" class="headerlink" title="📑 findings"></a>📑 findings</h2><p>The database contained information about the Employees, Clients and Customer support messages.</p>
+<p><img src="/images/ganji_user_data.png" alt="user"></p>
+<p><img src="/images/ganji_slack_users.png" alt="slack"></p>
+<p><img src="/images/ganji_num_name.png" alt="pii"></p>
+<p>Well, imagine all these people having their debt’s cleared, I guess I wasn’t Joker at the moment more of a good will cast. I repored the issue and this is how it went.</p>
+<h2 id="Parting-ways"><a href="#Parting-ways" class="headerlink" title="Parting ways"></a>Parting ways</h2><h3 id="bug-report-and-disclosure"><a href="#bug-report-and-disclosure" class="headerlink" title="bug report and disclosure"></a>bug report and disclosure</h3><p>I emailed the customer support team and fortunately they got back to me . Wanted this to be wrapped up as quick as possible.</p>
+<p><img src="/images/disc1.png" alt="disclosure"></p>
+<p>Couldn’t wait for them to take their time to fix it . Posted it on my Twitter and it got fixed.</p>
+<p><img src="/images/disc2.png" alt="final interaction between yours truly and the money team"></p>
+<h2 id="Fixing-it"><a href="#Fixing-it" class="headerlink" title="Fixing it ."></a>Fixing it .</h2><p>You can read <a target="_blank" rel="noopener" href="https://firebase.google.com/docs/rules">firebase security rules</a>. </p>
+<p>Till next time, ✌🏽 adios</p>
 
       </div>
       
         <div class="prev-or-next">
           <div class="post-foot-next">
             
-              <a href="/2018/03/20/MediatekFakes/" target="_self">
-                <i class="iconfont icon-chevronleft"></i>
-                <span>Prev</span>
-              </a>
-            
           </div>
           <div class="post-attach">
             <span class="post-pubtime">
               <i class="iconfont icon-updatetime" title="Update time"></i>
-              2021-09-20 17:14:06
+              2018-10-30 17:14:06
             </span>
             
                   <span class="post-tags">
@@ -213,6 +226,11 @@ MathJax = {
           </div>
           <div class="post-foot-prev">
             
+              <a href="/2020/03/20/MediatekFakes/" target="_self">
+                <span>Next</span>
+                <i class="iconfont icon-chevronright"></i>
+              </a>
+            
           </div>
         </div>
       
@@ -224,7 +242,7 @@ MathJax = {
   <div class="post-catalog hidden" id="catalog">
     <div class="title">Contents</div>
     <div class="catalog-content">
-      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Requested-Permissions"><span class="toc-text">Requested Permissions</span></a></li></ol>
+      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Requested-Permissions"><span class="toc-text">Requested Permissions</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%F0%9F%AA%B2-Foreplay-static-analysis"><span class="toc-text">🪲 Foreplay : static analysis</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#HASH"><span class="toc-text">HASH</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#APP-INFORMATION"><span class="toc-text">APP INFORMATION</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%F0%9F%93%91-findings"><span class="toc-text">📑 findings</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Parting-ways"><span class="toc-text">Parting ways</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#bug-report-and-disclosure"><span class="toc-text">bug report and disclosure</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Fixing-it"><span class="toc-text">Fixing it .</span></a></li></ol>
     </div>
   </div>
 
@@ -509,12 +527,12 @@ MathJax = {
       </a>
       <div class="share-content hidden">
         
-          <a class="share-item" href="https://twitter.com/intent/tweet?text=' + Fintech%20App%20Insecure%20Firebase%20DB + '&url=' + http%3A%2F%2Fexample.com%2F2021%2F09%2F20%2FInsecureFirebaseDB%2F + '" target="_blank" title="Twitter">
+          <a class="share-item" href="https://twitter.com/intent/tweet?text=' + Fintech%20App%20Insecure%20Firebase%20DB + '&url=' + http%3A%2F%2Fexample.com%2F2018%2F10%2F30%2FInsecureFirebaseDB%2F + '" target="_blank" title="Twitter">
             <i class="iconfont icon-twitter"></i>
           </a>
         
         
-          <a class="share-item" href="https://www.facebook.com/sharer.php?u=http://example.com/2021/09/20/InsecureFirebaseDB/" target="_blank" title="Facebook">
+          <a class="share-item" href="https://www.facebook.com/sharer.php?u=http://example.com/2018/10/30/InsecureFirebaseDB/" target="_blank" title="Facebook">
             <i class="iconfont icon-facebooksquare"></i>
           </a>
         
