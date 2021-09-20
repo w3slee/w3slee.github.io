@@ -11,8 +11,8 @@
   
   <title>
     
-      Lot&#39;s of Mediatek Fakes 
-      
+      Tag 
+       : Firebase
       
       |
     
@@ -101,150 +101,30 @@
 
 
       <div class="flex-container">
-        <!-- 文章详情页，展示文章具体内容，url形式：https://yoursite/文章标题/ -->
-<!-- 同时为「标签tag」，「朋友friend」，「分类categories」，「关于about」页面的承载页面，具体展示取决于page.type -->
+        <!-- 标签详情页，展示某个标签下的文章列表，url形式：https://yoursite/tags/某个标签/ -->
 
-<!-- LaTex Display -->
-<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-<script type="text/javascript" id="MathJax-script" async
-  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
-</script>
-<script>
-MathJax = {
-  tex: {
-    inlineMath: [['$', '$'], ['\\(', '\\)']]
-  }
-};
-</script>
-
-
-
-  
-
-  
-
-  
-
-  
-  <!-- 文章内容页 url形式：https://yoursite/文章标题/ -->
-  <div class="container post-details" id="post-details">
-    <div class="post-content">
-      <div class="post-title">Lot's of Mediatek Fakes</div>
-      <div class="post-attach">
-        <span class="post-pubtime">
-          <i class="iconfont icon-updatetime" title="Update time"></i>
-          2018-03-20 12:52:08
-        </span>
-        
-              <span class="post-tags">
-                <i class="iconfont icon-tags" title="Tags"></i>
-                
-                <span class="span--tag">
-                  <a href="/tags/post/" title="post">
-                    <b>#</b> post
-                  </a>
-                </span>
-                
-                <span class="span--tag">
-                  <a href="/tags/mediatek/" title="mediatek">
-                    <b>#</b> mediatek
-                  </a>
-                </span>
-                
-                <span class="span--tag">
-                  <a href="/tags/android/" title="android">
-                    <b>#</b> android
-                  </a>
-                </span>
-                
-              </span>
-          
-      </div>
-      <div class="markdown-body">
-        <p><img src="/images/mobi.png" alt="mobi"></p>
-<p>Apparently the reason why you’ll see very many people owning seemingly ‘high end’ flagship devices from our country Kenya is “peeps be buying <code>chinku</code> phones”.<br>The common and popular brands Infinix and Tecno have flooded the Kenyan market making the counterfeiters hard at work, pumping in the fakes.<br>It’s not hard to spot a fake by an average consumer who hopefully has experience using genuine devices. The give aways usually start on the screen. Devices claiming to have UHD / FHD displays ending up looking so <code>plasticky</code>. </p>
-<p>Let’s begin with the juicy technicals, this week I got two devices. An infinix X657 and a Tecno F2. The infinix device had the following specifications if you view them from the device information options in the android settings ;</p>
-<ul>
-<li>32GB internal memory </li>
-<li>2 Gigs of RAM, running on android version 9. All these are fake properties</li>
-</ul>
-<p><img src="/images/infinixsize.png" alt="Internal Storage of 2GB "></p>
-<p>Running the below command </p>
-<p><code>adb shell getprop ro.build.version.release</code> </p>
-<p><img src="/images/infinix_build.png" alt="device_properties"></p>
-<p>gives us the correct device properties</p>
-<p>The Tecno device also had fake specifications in the os; </p>
-<ul>
-<li><p>8 GB internal memory</p>
-</li>
-<li><p>1 GB of RAM </p>
-</li>
-</ul>
-<p>running on android version 6. The original device runs android 7.0 (Nougat)</p>
-<p>Executing</p>
-<p><code>adb shell du</code> </p>
-<p><code>adb shell df</code></p>
-<p>shows the storage properties</p>
-<p><img src="/images/tecnof2build.png" alt="correct_android_properties"></p>
-<p><img src="/images/tecnof2size.png" alt="correct_internal_storage_properties"></p>
-<p>These kind of devices are all over the market and very hard to detect it’s flaws from unexperienced consumers.<br>When buying an expensive looking device, it shouldn’t be cheap 😂 Stay educated !</p>
-
-      </div>
-      
-        <div class="prev-or-next">
-          <div class="post-foot-next">
-            
-          </div>
-          <div class="post-attach">
-            <span class="post-pubtime">
-              <i class="iconfont icon-updatetime" title="Update time"></i>
-              2018-03-20 12:52:08
-            </span>
-            
-                  <span class="post-tags">
-                    <i class="iconfont icon-tags" title="Tags"></i>
-                    
-                    <span class="span--tag">
-                      <a href="/tags/post/" title="post">
-                        <b>#</b> post
-                      </a>
-                    </span>
-                    
-                    <span class="span--tag">
-                      <a href="/tags/mediatek/" title="mediatek">
-                        <b>#</b> mediatek
-                      </a>
-                    </span>
-                    
-                    <span class="span--tag">
-                      <a href="/tags/android/" title="android">
-                        <b>#</b> android
-                      </a>
-                    </span>
-                    
-                  </span>
-              
-          </div>
-          <div class="post-foot-prev">
-            
-          </div>
-        </div>
-      
-    </div>
-    
-
-    
-      <div class="comments-container">
-        
-
-
-
-
-
-      </div>
-    
+<div class="container tag-details">
+  <div class="content-title">
+    <h2>
+      <span>Firebase</span>
+    </h2>
   </div>
-
+  
+    <div class="post-list">
+      <div class="post-item" title="Fintech App Insecure Firebase DB">
+        <span class="time-m-d">2021-09-20</span>
+        <a href="/2021/09/20/InsecureFirebaseDB/">
+          <span>Fintech App Insecure Firebase DB</span>
+        </a>
+      </div>
+    </div>
+  
+  <nav class="post-navigation">
+    
+    <span class="page-num">1 / 1</span>
+    
+  </nav>
+</div>
 
         <div class="footer">
   <div class="social">
@@ -501,24 +381,6 @@ MathJax = {
 
 
         
-  
-    <div class="share-icon tools-bar-item">
-      <a href="javascript: void(0)" id="share-icon">
-        <i class="iconfont iconshare"></i>
-      </a>
-      <div class="share-content hidden">
-        
-          <a class="share-item" href="https://twitter.com/intent/tweet?text=' + Lot's%20of%20Mediatek%20Fakes + '&url=' + http%3A%2F%2Fexample.com%2F2018%2F03%2F20%2Ffirst-post%2F + '" target="_blank" title="Twitter">
-            <i class="iconfont icon-twitter"></i>
-          </a>
-        
-        
-          <a class="share-item" href="https://www.facebook.com/sharer.php?u=http://example.com/2018/03/20/first-post/" target="_blank" title="Facebook">
-            <i class="iconfont icon-facebooksquare"></i>
-          </a>
-        
-      </div>
-    </div>
   
   
 <script src="/js/shares.js"></script>

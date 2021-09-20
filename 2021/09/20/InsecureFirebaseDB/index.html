@@ -11,7 +11,7 @@
   
   <title>
     
-      archive_a: 2018 
+      Fintech App Insecure Firebase DB 
       
       
       |
@@ -101,48 +101,151 @@
 
 
       <div class="flex-container">
-        <!-- 归档页，展示本站所有文章，按照年份降序归类，url形式：https://yoursite/archives/ -->
+        <!-- 文章详情页，展示文章具体内容，url形式：https://yoursite/文章标题/ -->
+<!-- 同时为「标签tag」，「朋友friend」，「分类categories」，「关于about」页面的承载页面，具体展示取决于page.type -->
 
-<!-- last: 按年份把文章分组，当前遍历到的年份 -->
-<!-- now: 当前遍历到的文章的发布年份 -->
+<!-- LaTex Display -->
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script type="text/javascript" id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
+</script>
+<script>
+MathJax = {
+  tex: {
+    inlineMath: [['$', '$'], ['\\(', '\\)']]
+  }
+};
+</script>
 
-<div class="container archives">
-  <div class="post-list">
-    
-        <!-- 后续文章的发布年份呈现 -->
-        <div class="content-title">
-          <h2>
-            <span>2021</span>
-          </h2>
-        </div>
-      
-      <div class="post-item" title="Fintech App Insecure Firebase DB">
-        <div class="time-m-d">09-20</div>
-        <div class="title">
-          <a href="/2021/09/20/InsecureFirebaseDB/">
-            <span>Fintech App Insecure Firebase DB</span>
-          </a>
-        </div>
+
+
+  
+
+  
+
+  
+
+  
+  <!-- 文章内容页 url形式：https://yoursite/文章标题/ -->
+  <div class="container post-details" id="post-details">
+    <div class="post-content">
+      <div class="post-title">Fintech App Insecure Firebase DB</div>
+      <div class="post-attach">
+        <span class="post-pubtime">
+          <i class="iconfont icon-updatetime" title="Update time"></i>
+          2021-09-20 17:14:06
+        </span>
+        
+              <span class="post-tags">
+                <i class="iconfont icon-tags" title="Tags"></i>
+                
+                <span class="span--tag">
+                  <a href="/tags/Android-Vulnerability-Research/" title="Android Vulnerability Research">
+                    <b>#</b> Android Vulnerability Research
+                  </a>
+                </span>
+                
+                <span class="span--tag">
+                  <a href="/tags/Firebase/" title="Firebase">
+                    <b>#</b> Firebase
+                  </a>
+                </span>
+                
+              </span>
+          
       </div>
-    
-        <!-- 后续文章的发布年份呈现 -->
-        <div class="content-title">
-          <h2>
-            <span>2018</span>
-          </h2>
+      <div class="markdown-body">
+        <p><img src="/images/bone.png" alt="bone"></p>
+<p>Sacrifice some piece of your privacy for some ‘quick instant loan to MPESA’. The year is 2019, the bloom of mobile instant loan apps which require your ID number, email, phone number and some interesting permission to your android device.</p>
+<h2 id="Requested-Permissions"><a href="#Requested-Permissions" class="headerlink" title="Requested Permissions"></a>Requested Permissions</h2><ol>
+<li> SYSTEM_ALERT_WINDOW</li>
+<li> GET_TASKS</li>
+<li> CAMERA</li>
+<li> GET_ACCOUNTS</li>
+<li> READ_PHONE_NUMBERS</li>
+<li> ACCESS_NETWORK_STATE</li>
+<li> READ_PHONE_STATE</li>
+<li> INTERNET</li>
+<li> WRITE_EXTERNAL_STORAGE</li>
+<li>READ_EXTERNAL_STORAGE</li>
+<li>READ_CONTACTS</li>
+<li>ACCESS_COARSE_LOCATION</li>
+<li>ACCESS_FINE_LOCATION</li>
+<li>BIND_GET_INSTALL_REFERRER_SERVICE</li>
+</ol>
+<p>You can look up what the permissions mean here : android developer docs After the app checks on your eligibility to be offered the requested loan amount. If successfull the funds are instantly transferred to your MPESA. Accepting the absurd interest rate and penalty if you default. With popular apps like Tala and Branch many similar applications have been lauched into the playstore some looking like outright scams. And the applications seem to be built using Rapid Android Application Development Frameworks. Which allow you to create an android app with little or sometimes writing no code.</p>
+<p>Let’s look at Ganji, with thousands of downloads was popular on playstore. Never seen it before, so I decided to take a look at it.<br>Mostly I read on the apps reviews to find out what the user experience is . Seemed sane with the common “ why have you not given me a loan yet I qualify “ rants</p>
+
+      </div>
+      
+        <div class="prev-or-next">
+          <div class="post-foot-next">
+            
+              <a href="/2018/03/20/MediatekFakes/" target="_self">
+                <i class="iconfont icon-chevronleft"></i>
+                <span>Prev</span>
+              </a>
+            
+          </div>
+          <div class="post-attach">
+            <span class="post-pubtime">
+              <i class="iconfont icon-updatetime" title="Update time"></i>
+              2021-09-20 17:14:06
+            </span>
+            
+                  <span class="post-tags">
+                    <i class="iconfont icon-tags" title="Tags"></i>
+                    
+                    <span class="span--tag">
+                      <a href="/tags/Android-Vulnerability-Research/" title="Android Vulnerability Research">
+                        <b>#</b> Android Vulnerability Research
+                      </a>
+                    </span>
+                    
+                    <span class="span--tag">
+                      <a href="/tags/Firebase/" title="Firebase">
+                        <b>#</b> Firebase
+                      </a>
+                    </span>
+                    
+                  </span>
+              
+          </div>
+          <div class="post-foot-prev">
+            
+          </div>
         </div>
       
-      <div class="post-item" title="Lot's of Mediatek Fakes">
-        <div class="time-m-d">03-20</div>
-        <div class="title">
-          <a href="/2018/03/20/MediatekFakes/">
-            <span>Lot's of Mediatek Fakes</span>
-          </a>
-        </div>
+    </div>
+    
+  <div id="btn-catalog" class="btn-catalog">
+    <i class="iconfont icon-catalog"></i>
+  </div>
+  <div class="post-catalog hidden" id="catalog">
+    <div class="title">Contents</div>
+    <div class="catalog-content">
+      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Requested-Permissions"><span class="toc-text">Requested Permissions</span></a></li></ol>
+    </div>
+  </div>
+
+  
+<script src="/js/catalog.js"></script>
+
+
+
+
+    
+      <div class="comments-container">
+        
+
+
+
+
+
       </div>
     
   </div>
-</div>
+
 
         <div class="footer">
   <div class="social">
@@ -399,6 +502,24 @@
 
 
         
+  
+    <div class="share-icon tools-bar-item">
+      <a href="javascript: void(0)" id="share-icon">
+        <i class="iconfont iconshare"></i>
+      </a>
+      <div class="share-content hidden">
+        
+          <a class="share-item" href="https://twitter.com/intent/tweet?text=' + Fintech%20App%20Insecure%20Firebase%20DB + '&url=' + http%3A%2F%2Fexample.com%2F2021%2F09%2F20%2FInsecureFirebaseDB%2F + '" target="_blank" title="Twitter">
+            <i class="iconfont icon-twitter"></i>
+          </a>
+        
+        
+          <a class="share-item" href="https://www.facebook.com/sharer.php?u=http://example.com/2021/09/20/InsecureFirebaseDB/" target="_blank" title="Facebook">
+            <i class="iconfont icon-facebooksquare"></i>
+          </a>
+        
+      </div>
+    </div>
   
   
 <script src="/js/shares.js"></script>
