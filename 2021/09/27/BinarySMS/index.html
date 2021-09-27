@@ -11,7 +11,7 @@
   
   <title>
     
-      Lot&#39;s of Mediatek Fakes 
+      Binary SMS 
       
       
       |
@@ -125,49 +125,161 @@ MathJax = {
   <!-- 文章内容页 url形式：https://yoursite/文章标题/ -->
   <div class="container post-details" id="post-details">
     <div class="post-content">
-      <div class="post-title">Lot's of Mediatek Fakes</div>
+      <div class="post-title">Binary SMS</div>
       <div class="post-attach">
         <span class="post-pubtime">
           <i class="iconfont icon-updatetime" title="Update time"></i>
-          2020-03-20 12:52:08
+          2021-09-27 12:28:20
         </span>
         
       </div>
       <div class="markdown-body">
-        <p><img src="/images/mobi.png" alt="mobi"></p>
-<p>Apparently the reason why you’ll see very many people owning seemingly ‘high end’ flagship devices from our country Kenya is “peeps be buying <code>chinku</code> phones”.<br>The common and popular brands Infinix and Tecno have flooded the Kenyan market making the counterfeiters hard at work, pumping in the fakes.<br>It’s not hard to spot a fake by an average consumer who hopefully has experience using genuine devices. The give aways usually start on the screen. Devices claiming to have UHD / FHD displays ending up looking so <code>plasticky</code>. </p>
-<p>Let’s begin with the juicy technicals, this week I got two devices. An infinix X657 and a Tecno F2. The infinix device had the following specifications if you view them from the device information options in the android settings ;</p>
+        <h1 id="Exploiting-Devices-Using-SMS-PT-1"><a href="#Exploiting-Devices-Using-SMS-PT-1" class="headerlink" title="Exploiting Devices Using SMS PT 1"></a>Exploiting Devices Using SMS PT 1</h1><h6 id="Terms-Definition"><a href="#Terms-Definition" class="headerlink" title="Terms Definition"></a>Terms Definition</h6><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">OTA     	Over-The-Air</span><br><span class="line"></span><br><span class="line">            Over-the-air programming refers to various methods of distributing new software, configuration settings</span><br><span class="line">            and even updating encryption keys to devices like mobile phones.</span><br><span class="line"></span><br><span class="line">SMS     	Short Message Service</span><br><span class="line"></span><br><span class="line">SMS-PDU     SMS Protocol Data Unit</span><br><span class="line">            A single unit of information transmitted among peer entities of a computer network. </span><br></pre></td></tr></table></figure>
+
+<p>I’ve always wondered how security forces and mobile telco companies are able to track somebody’s location or even<br>interact with the sim card and execute commands remotely that is then processed by the mobile device.</p>
+<p>Here comes OTA messages, these are specially crafted <strong>Binary SMSs / SMS-PDU commands</strong> which is sent to a SIM Card.</p>
+<h3 id="The-PDU-format"><a href="#The-PDU-format" class="headerlink" title="The PDU format"></a>The PDU format</h3><p>There are two ways of sending and receiving SMS messages:  by <code>text mode</code> and by <code>PDU (protocol description unit) mode</code>.</p>
+<p>The text mode  (unavailable on some phones) is just an encoding of the bit stream represented by the PDU mode.<br>Alphabets may differ and there are several encoding alternatives when displaying an SMS message.<br>The most common options are  <code>&quot;PCCP437&quot;, &quot;PCDN&quot;, &quot;8859-1&quot;, &quot;IRA&quot; and &quot;GSM&quot;</code>.</p>
+<p>These are all set by the at-command <code>AT+CSCS</code>,  when you read the message in a computer application.<br>If you read the message on your  phone, the phone will choose a proper encoding.<br>An application capable of reading incoming SMS messages, can thus use text mode or PDU mode.<br>If text mode is used, the application is bound to (or limited by) the set of preset encoding  options. In some cases,<br>that’s just not good enough. If PDU mode is used, any  encoding can be implemented.</p>
+<h5 id="Receiving-a-message-in-the-PDU-mode"><a href="#Receiving-a-message-in-the-PDU-mode" class="headerlink" title="Receiving a message in the PDU mode"></a>Receiving a message in the PDU mode</h5><p>The PDU string contains not only the message, but also a lot of meta-information about the sender, his SMS service  center, the time stamp etc.<br>It is all in the form of <code>*hexa-decimal octets*</code> or <code>*decimal semi-octets*</code>.</p>
+<p>Below details a Sample PDU payload.</p>
+<hr>
+<p>917238010010F5</p>
+<p>040BC87238880900F100009930925161958003C16010</p>
+<p>This octet sequence consists of three parts: An initial octet indicating the length of the SMSC information (“07”), the SMSC information itself (“917238010010F5”), and the SMS_DELIVER part (specified by ETSI in GSM 03.40).</p>
+<table>
+<thead>
+<tr>
+<th>Octet(s)</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>07</td>
+<td>Length of the SMSC information (in this case 7 octets)</td>
+</tr>
+<tr>
+<td>91</td>
+<td>Type-of-address of the SMSC. (91 means international format of the phone number)</td>
+</tr>
+<tr>
+<td>72 38 01 00 10 F5</td>
+<td>Service center number(in decimal semi-octets). The length of the phone  number is odd (11), so a trailing F has been added to form proper octets. The  phone number of this service center is “+27831000015”. See below.</td>
+</tr>
+<tr>
+<td>04</td>
+<td>First octet of this SMS-DELIVER message.</td>
+</tr>
+<tr>
+<td>0B</td>
+<td>Address-Length. Length of the sender number (0B hex = 11 dec)</td>
+</tr>
+<tr>
+<td>C8</td>
+<td>Type-of-address of the sender number</td>
+</tr>
+<tr>
+<td>72 38 88 09 00 F1</td>
+<td>Sender number (decimal semi-octets), with a trailing F</td>
+</tr>
+<tr>
+<td>00</td>
+<td>TP-PID. Protocol identifier.</td>
+</tr>
+<tr>
+<td>00</td>
+<td>TP-DCS Data coding scheme</td>
+</tr>
+<tr>
+<td>99 30 92 51 61 95 80</td>
+<td>TP-SCTS. Time stamp (semi-octets)</td>
+</tr>
+<tr>
+<td>OA</td>
+<td>TP-UDL. User data length, length of message. The TP-DCS field indicated  7-bit data, so the length here is the number of septets (10). If the TP-DCS  field were set to indicate 8-bit data or Unicode, the length would be the number of octets (9).</td>
+</tr>
+<tr>
+<td>E8329BFD4697D9EC37</td>
+<td>TP-UD. Message “hellohello” , 8-bit octets representing 7-bit data.</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+</tr>
+</tbody></table>
+<p>All the octets above are hexa-decimal 8-bit octets,  except the Service center number, the sender number and the timestamp;<br>they are  decimal semi-octets. The message part in the end of the  PDU string consists of  hexa-decimal 8-bit octets,<br>but these octets represent 7-bit data (see below). The semi-octets are decimal, and e.g. the sender number is obtained by performing<br>internal swapping within the semi-octets from <code>**&quot;72 38 88 09 00 F1&quot;**</code> to <code>**&quot;27 83 88 90 00 1F&quot;**</code>.</p>
+<p>The length of the phone number is odd, so a proper octet sequence cannot be formed by this number.<br>This is the reason why the <code>trailing F</code> has been added. The time stamp, when parsed, equals <code>**&quot;99 03 29 15 16 59 08&quot;**</code>,<br>where the :</p>
 <ul>
-<li>32GB internal memory </li>
-<li>2 Gigs of RAM, running on android version 9. All these are fake properties</li>
+<li>6 first characters represent <code>date</code></li>
+<li>the following 6 represents <code>time</code>,</li>
+<li>the last 2 represents <code>time-zone related to GMT</code>.</li>
 </ul>
-<p><img src="/images/infinixsize.png" alt="Internal Storage of 2GB "></p>
-<p>Running the below command </p>
-<p><code>adb shell getprop ro.build.version.release</code> </p>
-<p><img src="/images/infinix_build.png" alt="device_properties"></p>
-<p>gives us the correct device properties</p>
-<p>The Tecno device also had fake specifications in the os; </p>
-<ul>
-<li><p>8 GB internal memory</p>
-</li>
-<li><p>1 GB of RAM </p>
-</li>
-</ul>
-<p>running on android version 6. The original device runs android 7.0 (Nougat)</p>
-<p>Executing</p>
-<p><code>adb shell du</code> </p>
-<p><code>adb shell df</code></p>
-<p>shows the storage properties</p>
-<p><img src="/images/tecnof2build.png" alt="correct_android_properties"></p>
-<p><img src="/images/tecnof2size.png" alt="correct_internal_storage_properties"></p>
-<p>These kind of devices are all over the market and very hard to detect it’s flaws from unexperienced consumers.<br>When buying an expensive looking device, it shouldn’t be cheap 😂 Stay educated !</p>
+<h5 id="Interpreting-8-bit-octets-as-7-bit-messages"><a href="#Interpreting-8-bit-octets-as-7-bit-messages" class="headerlink" title="Interpreting 8-bit octets as 7-bit messages"></a>Interpreting 8-bit octets as 7-bit messages</h5><p>This transformation is described in detail in <code>GSM 03.38</code>, and an example of the  “hellohello” transformation is shown here.<br>The transformation is based on the 7 bit default alphabet , but an application built on the PDU mode can use any character encoding.</p>
+<h5 id="Sending-a-message-in-the-PDU-mode"><a href="#Sending-a-message-in-the-PDU-mode" class="headerlink" title="Sending a message in the PDU mode"></a>Sending a message in the PDU mode</h5><p>The following example shows how to send the message “hellohello” in the PDU mode from a GSM modem.</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">AT+CMGF=0 //Set PDU mode</span><br><span class="line">AT+CSMS=0 //Check if modem supports SMS commands</span><br><span class="line">AT+CMGS=23 //Send message, 23 octets (excluding the two initial zeros) &gt;`0011000B916407281553F80000AA0AE8329BFD4697D9EC37`&#x27;</span><br></pre></td></tr></table></figure>
+<p>There are 23 octets in this message (46 ‘characters’)</p>
+<p>The first octet (“00”) doesn’t count, it is only an indicator of the length of the SMSC information supplied (0).</p>
+<h5 id="The-PDU-string-consists-of-the-following"><a href="#The-PDU-string-consists-of-the-following" class="headerlink" title="The PDU string consists of the following:"></a>The PDU string consists of the following:</h5><p>–</p>
+<table>
+<thead>
+<tr>
+<th>Octet(s)</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>00</td>
+<td>Length of SMSC information.</td>
+</tr>
+<tr>
+<td>11</td>
+<td>First octet of the SMS-SUBMIT message</td>
+</tr>
+<tr>
+<td>00</td>
+<td>TP-Message-Reference. The “00” value here lets the phone set the message  reference number itself.</td>
+</tr>
+<tr>
+<td>0B</td>
+<td>Address-Length. Length of phone number (11)</td>
+</tr>
+<tr>
+<td>91</td>
+<td>Type-of-Address. (91 indicates international format of the phone number).</td>
+</tr>
+<tr>
+<td>6407281553F8</td>
+<td>The phone number in semi octets (46708251358). The length of the phone  number is odd (11), therefore a trailing F has been added, as if the phone number were “46708251358F”. Using the unknown format (i.e. the Type-of-Address 81 instead of 91) would yield the phone number octet sequence 7080523185 (0708251358). Note that this has the length 10 (A), which is even.</td>
+</tr>
+<tr>
+<td>00</td>
+<td>TP-PID. Protocol identifier</td>
+</tr>
+<tr>
+<td>AA</td>
+<td>TP-Validity-Period. “AA” means 4 days. Note: This octet is optional, see bits 4 and 3 of the first  octet</td>
+</tr>
+<tr>
+<td>0A</td>
+<td>TP-User-Data-Length. Length of message.</td>
+</tr>
+<tr>
+<td>E8329BFD4697D9EC3 7</td>
+<td>TP-User-Data. These octets represent the message “hellohello”. How to do the  transformation from 7bit septets into octets is shown here</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+</tr>
+</tbody></table>
+<p><code>TP-DCS. Data coding scheme.This message is coded according to the 7bit default alphabet. Having &quot;02&quot; instead of &quot;00&quot; here, would indicate that the TP-User-Data field of this message should be interpreted as 8bit rather than 7bit (used in e.g. smart messaging, OTA provisioning etc). </code></p>
 
       </div>
       
         <div class="prev-or-next">
           <div class="post-foot-next">
             
-              <a href="/2019/06/12/How-Did-We-Get-Here/" target="_self">
+              <a href="/2020/03/20/MediatekFakes/" target="_self">
                 <i class="iconfont icon-chevronleft"></i>
                 <span>Prev</span>
               </a>
@@ -176,22 +288,32 @@ MathJax = {
           <div class="post-attach">
             <span class="post-pubtime">
               <i class="iconfont icon-updatetime" title="Update time"></i>
-              2020-03-20 12:52:08
+              2021-09-27 12:28:20
             </span>
             
           </div>
           <div class="post-foot-prev">
-            
-              <a href="/2021/09/27/BinarySMS/" target="_self">
-                <span>Next</span>
-                <i class="iconfont icon-chevronright"></i>
-              </a>
             
           </div>
         </div>
       
     </div>
     
+  <div id="btn-catalog" class="btn-catalog">
+    <i class="iconfont icon-catalog"></i>
+  </div>
+  <div class="post-catalog hidden" id="catalog">
+    <div class="title">Contents</div>
+    <div class="catalog-content">
+      <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Exploiting-Devices-Using-SMS-PT-1"><span class="toc-text">Exploiting Devices Using SMS PT 1</span></a><ol class="toc-child"><li class="toc-item toc-level-6"><a class="toc-link" href="#Terms-Definition"><span class="toc-text">Terms Definition</span></a></li></ol></li></ol></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#The-PDU-format"><span class="toc-text">The PDU format</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#Receiving-a-message-in-the-PDU-mode"><span class="toc-text">Receiving a message in the PDU mode</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#Interpreting-8-bit-octets-as-7-bit-messages"><span class="toc-text">Interpreting 8-bit octets as 7-bit messages</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#Sending-a-message-in-the-PDU-mode"><span class="toc-text">Sending a message in the PDU mode</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#The-PDU-string-consists-of-the-following"><span class="toc-text">The PDU string consists of the following:</span></a></li></ol></li></ol></li></ol></li></ol></li></ol>
+    </div>
+  </div>
+
+  
+<script src="/js/catalog.js"></script>
+
+
+
 
     
       <div class="comments-container">
@@ -468,12 +590,12 @@ MathJax = {
       </a>
       <div class="share-content hidden">
         
-          <a class="share-item" href="https://twitter.com/intent/tweet?text=' + Lot's%20of%20Mediatek%20Fakes + '&url=' + http%3A%2F%2Fexample.com%2F2020%2F03%2F20%2FMediatekFakes%2F + '" target="_blank" title="Twitter">
+          <a class="share-item" href="https://twitter.com/intent/tweet?text=' + Binary%20SMS + '&url=' + http%3A%2F%2Fexample.com%2F2021%2F09%2F27%2FBinarySMS%2F + '" target="_blank" title="Twitter">
             <i class="iconfont icon-twitter"></i>
           </a>
         
         
-          <a class="share-item" href="https://www.facebook.com/sharer.php?u=http://example.com/2020/03/20/MediatekFakes/" target="_blank" title="Facebook">
+          <a class="share-item" href="https://www.facebook.com/sharer.php?u=http://example.com/2021/09/27/BinarySMS/" target="_blank" title="Facebook">
             <i class="iconfont icon-facebooksquare"></i>
           </a>
         
