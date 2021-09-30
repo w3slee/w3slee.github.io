@@ -11,7 +11,7 @@
   
   <title>
     
-      Archives 
+      IoT_Hacking 
       
       
       |
@@ -97,89 +97,199 @@
 
 
       <div class="flex-container">
-        <!-- 归档页，展示本站所有文章，按照年份降序归类，url形式：https://yoursite/archives/ -->
+        <!-- 文章详情页，展示文章具体内容，url形式：https://yoursite/文章标题/ -->
+<!-- 同时为「标签tag」，「朋友friend」，「分类categories」，「关于about」页面的承载页面，具体展示取决于page.type -->
 
-<!-- last: 按年份把文章分组，当前遍历到的年份 -->
-<!-- now: 当前遍历到的文章的发布年份 -->
+<!-- LaTex Display -->
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script type="text/javascript" id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
+</script>
+<script>
+MathJax = {
+  tex: {
+    inlineMath: [['$', '$'], ['\\(', '\\)']]
+  }
+};
+</script>
 
-<div class="container archives">
-  <div class="post-list">
-    
-        <!-- 后续文章的发布年份呈现 -->
-        <div class="content-title">
-          <h2>
-            <span>2021</span>
-          </h2>
+
+
+  
+
+  
+
+  
+
+  
+  <!-- 文章内容页 url形式：https://yoursite/文章标题/ -->
+  <div class="container post-details" id="post-details">
+    <div class="post-content">
+      <div class="post-title">IoT_Hacking</div>
+      <div class="post-attach">
+        <span class="post-pubtime">
+          <i class="iconfont icon-updatetime" title="Update time"></i>
+          2021-09-30 13:01:24
+        </span>
+        
+      </div>
+      <div class="markdown-body">
+        <hr>
+<h2 id="IoT-Hacking-Tools-Lisiting"><a href="#IoT-Hacking-Tools-Lisiting" class="headerlink" title="IoT Hacking Tools Lisiting )"></a>IoT Hacking Tools Lisiting )</h2><hr>
+<p>Listing of hardware and software tools in times of IoT hacking engagements.</p>
+<h3 id="Firmware-Tools"><a href="#Firmware-Tools" class="headerlink" title="Firmware Tools"></a>Firmware Tools</h3><p>Tools that can analyze firmware images, disassemble images and attach to firmware<br>processes during runtime.</p>
+<pre><code>+ Binwalk
++ Radare2
++ Qemu
++ GDB
++ Angr
++ Firmwalker
++ Firmdyne
++ Firmware-mod-toolkit
++ Firmware-analysis-toolkit
++ Binary Analysis Tool (BAT)
++ Ghidra
++ IDA Pro
+</code></pre>
+<h3 id="Web-Application-Testing-Tools"><a href="#Web-Application-Testing-Tools" class="headerlink" title="Web Application Testing Tools"></a>Web Application Testing Tools</h3><hr>
+<h4 id="Most-common-is"><a href="#Most-common-is" class="headerlink" title="Most common is :"></a>Most common is :</h4><pre><code>+ Burp Suite
++ OWASP Zed Attack Proxy (ZAP)
+</code></pre>
+<h5 id="Others"><a href="#Others" class="headerlink" title="Others:"></a>Others:</h5><pre><code>+ REST Easy Firefox Plugin
++ Postman Chrome Extension
+</code></pre>
+<h3 id="Mobile-App-Testing-Tools"><a href="#Mobile-App-Testing-Tools" class="headerlink" title="Mobile App Testing Tools"></a>Mobile App Testing Tools</h3><hr>
+<h4 id="Android"><a href="#Android" class="headerlink" title="Android"></a>Android</h4><pre><code>+ Genymotion
++ Android SDK
++ Android Emulator
+
+----
++ Enjarify
++ JD-GUI
++ MobSF
++ SQLite Browser
++ Burp Suite
++ OWASP ZAP
+</code></pre>
+<h4 id="iOS"><a href="#iOS" class="headerlink" title="iOS"></a>iOS</h4><pre><code>iOS testing tools are unique in that an OS X computer and a jailbroken iDevice
+are required for testing.
+</code></pre>
+<p>#####OS X Computer</p>
+<pre><code>Listed below are SW tools that are to be installed on your host computer for testing and/or assessing iOS applications
+
++ idb
++ Xcode tools
++ Class-dump
++ Hopper (optional)
++ MobSF
++ SQLite browser
++ Burp Suite
++ OWASP ZAP
+</code></pre>
+<p>#####Jailbroken iDevice</p>
+<pre><code>+ Cydia
++ openURL
++ DumpDecrypted
++ iPainstaller
++ SSL Kill Switch 2
++ Clutch2
++ Cycript
+</code></pre>
+<h3 id="HARDWARE-TOOLS"><a href="#HARDWARE-TOOLS" class="headerlink" title="HARDWARE TOOLS"></a>HARDWARE TOOLS</h3><hr>
+<p>Required tools needed for disassembling devices, finding ground and accessing device interfaces</p>
+<pre><code>+ Multimeters
+
++ iFixit classic pro tech toolkit for hardware disassembly
+
++ Bus Pirate
+
++ USB to serial adapters
+    - Shikra, FTDI FT232, CP2102, PL2303, AdaFruit FTDI Friend
+
++ JTAG Adapters
+    - Shikra, JTAGulator, Arduino with JTAGenum, JLINK, Bus Blaster
+
++ Logic Analyser (optional)
+    - Saleae Logic or others
+</code></pre>
+<h4 id="Hardware-Analysis-Software"><a href="#Hardware-Analysis-Software" class="headerlink" title="Hardware Analysis Software"></a>Hardware Analysis Software</h4><pre><code>+ OpenOCD
++ Spiflash
++ Minicom
++ Baudrate
+</code></pre>
+<h4 id="Radio-Analyis-Tools"><a href="#Radio-Analyis-Tools" class="headerlink" title="Radio Analyis Tools"></a>Radio Analyis Tools</h4><p>In order to sniff wireless technology, certain wireless chipsets are required.</p>
+<h5 id="HARDWARE"><a href="#HARDWARE" class="headerlink" title="HARDWARE"></a>HARDWARE</h5><pre><code>+ Yardstick One
++ Ubertooth
++ Atmel RZ Raven USB (KillerBee framework)
++ HackRF One
++ BLe adapter
++ Attify Badge
+</code></pre>
+<h5 id="SOFTWARE"><a href="#SOFTWARE" class="headerlink" title="SOFTWARE"></a>SOFTWARE</h5><pre><code>+ KillerBee Framework
++ Attify ZigBee Framework
++ GNU Radio
++ BLEAH
++ GQRX
++ Ubertooth tools
++ Blue Hydra
++ RTL-SDR
++ HackRF packages
++ EZ-Wave
+</code></pre>
+
+      </div>
+      
+        <div class="prev-or-next">
+          <div class="post-foot-next">
+            
+              <a href="/2020/03/20/MediatekFakes/" target="_self">
+                <i class="iconfont icon-chevronleft"></i>
+                <span>Prev</span>
+              </a>
+            
+          </div>
+          <div class="post-attach">
+            <span class="post-pubtime">
+              <i class="iconfont icon-updatetime" title="Update time"></i>
+              2021-09-30 13:01:24
+            </span>
+            
+          </div>
+          <div class="post-foot-prev">
+            
+          </div>
         </div>
       
-      <div class="post-item" title="IoT_Hacking">
-        <div class="time-m-d">09-30</div>
-        <div class="title">
-          <a href="/2021/09/30/IoT-Hacking/">
-            <span>IoT_Hacking</span>
-          </a>
-        </div>
-      </div>
+    </div>
     
-        <!-- 后续文章的发布年份呈现 -->
-        <div class="content-title">
-          <h2>
-            <span>2020</span>
-          </h2>
-        </div>
-      
-      <div class="post-item" title="Lot's of Mediatek Fakes">
-        <div class="time-m-d">03-20</div>
-        <div class="title">
-          <a href="/2020/03/20/MediatekFakes/">
-            <span>Lot's of Mediatek Fakes</span>
-          </a>
-        </div>
-      </div>
+  <div id="btn-catalog" class="btn-catalog">
+    <i class="iconfont icon-catalog"></i>
+  </div>
+  <div class="post-catalog hidden" id="catalog">
+    <div class="title">Contents</div>
+    <div class="catalog-content">
+      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#IoT-Hacking-Tools-Lisiting"><span class="toc-text">IoT Hacking Tools Lisiting )</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Firmware-Tools"><span class="toc-text">Firmware Tools</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Web-Application-Testing-Tools"><span class="toc-text">Web Application Testing Tools</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#Most-common-is"><span class="toc-text">Most common is :</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#Others"><span class="toc-text">Others:</span></a></li></ol></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Mobile-App-Testing-Tools"><span class="toc-text">Mobile App Testing Tools</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#Android"><span class="toc-text">Android</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#iOS"><span class="toc-text">iOS</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#HARDWARE-TOOLS"><span class="toc-text">HARDWARE TOOLS</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#Hardware-Analysis-Software"><span class="toc-text">Hardware Analysis Software</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Radio-Analyis-Tools"><span class="toc-text">Radio Analyis Tools</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#HARDWARE"><span class="toc-text">HARDWARE</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#SOFTWARE"><span class="toc-text">SOFTWARE</span></a></li></ol></li></ol></li></ol></li></ol>
+    </div>
+  </div>
+
+  
+<script src="/js/catalog.js"></script>
+
+
+
+
     
-        <!-- 后续文章的发布年份呈现 -->
-        <div class="content-title">
-          <h2>
-            <span>2019</span>
-          </h2>
-        </div>
-      
-      <div class="post-item" title="How Did We Get Here">
-        <div class="time-m-d">06-12</div>
-        <div class="title">
-          <a href="/2019/06/12/How-Did-We-Get-Here/">
-            <span>How Did We Get Here</span>
-          </a>
-        </div>
-      </div>
-    
-        <!-- 后续文章的发布年份呈现 -->
-        <div class="content-title">
-          <h2>
-            <span>2018</span>
-          </h2>
-        </div>
-      
-      <div class="post-item" title="Fintech App Insecure Firebase DB">
-        <div class="time-m-d">10-30</div>
-        <div class="title">
-          <a href="/2018/10/30/InsecureFirebaseDB/">
-            <span>Fintech App Insecure Firebase DB</span>
-          </a>
-        </div>
-      </div>
-    
-      <div class="post-item" title="ADB Commands I Usually Forget">
-        <div class="time-m-d">09-27</div>
-        <div class="title">
-          <a href="/2018/09/27/ADB-CheatSheet/">
-            <span>ADB Commands I Usually Forget</span>
-          </a>
-        </div>
+      <div class="comments-container">
+        
+
+
+
+
+
       </div>
     
   </div>
-</div>
+
 
         <div class="footer">
   <div class="social">
@@ -436,6 +546,24 @@
 
 
         
+  
+    <div class="share-icon tools-bar-item">
+      <a href="javascript: void(0)" id="share-icon">
+        <i class="iconfont iconshare"></i>
+      </a>
+      <div class="share-content hidden">
+        
+          <a class="share-item" href="https://twitter.com/intent/tweet?text=' + IoT_Hacking + '&url=' + http%3A%2F%2Fexample.com%2F2021%2F09%2F30%2FIoT-Hacking%2F + '" target="_blank" title="Twitter">
+            <i class="iconfont icon-twitter"></i>
+          </a>
+        
+        
+          <a class="share-item" href="https://www.facebook.com/sharer.php?u=http://example.com/2021/09/30/IoT-Hacking/" target="_blank" title="Facebook">
+            <i class="iconfont icon-facebooksquare"></i>
+          </a>
+        
+      </div>
+    </div>
   
   
 <script src="/js/shares.js"></script>
