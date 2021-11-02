@@ -1,0 +1,56 @@
+==================================================================
+https://keybase.io/mch1nen
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://w3slee.github.io
+  * I am mch1nen (https://keybase.io/mch1nen) on keybase.
+  * I have a public key ASBYFDG7_CYSDGlwLsAyMXphQ9svWQduJ_J1tw-5CTKWUAo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "0120581431bbfc26120c69702ec032317a6143db2f59076e27f275b70fb9093296500a",
+      "host": "keybase.io",
+      "kid": "0120581431bbfc26120c69702ec032317a6143db2f59076e27f275b70fb9093296500a",
+      "uid": "2db2b3a6439d6b3a243e7223bab4ed19",
+      "username": "mch1nen"
+    },
+    "merkle_root": {
+      "ctime": 1635831459
+      "hash": "3b7aeacce4b2b77a59e399a3f8a30c96e8dbbeb7a51452574cdc5315dae7b1e4fe900866468a45518bac1b5b765b3250c7eb89f1b8f2c5f32a6d1d7bcc095ac4",
+      "hash_meta": "2bc2d2add7301274faa35ce38de03f4505846b0b572f5989c467323d4ae6ad49",
+      "seqno": 21116641
+    },
+    "service": {
+      "entropy": "kIIbSj5AxSkF/OLAVFU0bn9u",
+      "hostname": "w3slee.github.io",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 2
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "5.8.0"
+  },
+  "ctime": 1635831509,
+  "expire_in": 504576000,
+  "prev": "0e44751797f2b1e562fbd0c8cf12d4f80de69e2c922a2f1981073c2657bb3938",
+  "seqno": 8,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgWBQxu/wmEgxpcC7AMjF6YUPbL1kHbifydbcPuQkyllAKp3BheWxvYWTESpcCCMQgDkR1F5fyseVi+9DIzxLU+A3mniySKi8ZgQc8Jle7OTjEIHrj4WtDMX/z7kKZivAcJGwiR+7AnZca4fJ5NiMAcJT4AgHCo3NpZ8RAiS8e3OWiXbjr8WKEvRhoGpkRbRKcUg+/c5kMWmsAqv30qYrMsYMDqNt9k9mxtwTzvOgsdM4aHAAWl529ARfhDahzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIII7Ebt12ytiFQltfDrT+aGKJmpGctj/mLp4rqAwOgu9o3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/mch1nen
+
+==================================================================,
