@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>w3slee - blog</title>
+    <link>https://w3slee.github.io/</link>
+    <description>Recent content on w3slee - blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 21 Oct 2023 23:19:52 +0300</lastBuildDate><atom:link href="https://w3slee.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Advanced SMS Phishing</title>
+      <link>https://w3slee.github.io/posts/advanced-sms-phishing/</link>
+      <pubDate>Sat, 21 Oct 2023 23:19:52 +0300</pubDate>
+      
+      <guid>https://w3slee.github.io/posts/advanced-sms-phishing/</guid>
+      <description>Advanced SMS Phishing With $10 GSM Modem Using opensource SMS server to conduct advanced phishing attacks.</description>
+    </item>
+    
+  </channel>
+</rss>
