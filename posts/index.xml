@@ -6,7 +6,16 @@
     <description>Recent content in Posts on w3slee - blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 21 Oct 2023 23:19:52 +0300</lastBuildDate><atom:link href="https://w3slee.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 22 Oct 2023 23:46:01 +0300</lastBuildDate><atom:link href="https://w3slee.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>10dollarAPT</title>
+      <link>https://w3slee.github.io/posts/10dollarapt/</link>
+      <pubDate>Sun, 22 Oct 2023 23:46:01 +0300</pubDate>
+      
+      <guid>https://w3slee.github.io/posts/10dollarapt/</guid>
+      <description>Advanced SMS Phishing With $10 Dollar GSM Modem + NowSMS In Kenya when a new simcard is inserted into a mobile device, the telco company send an internet configuration message</description>
+    </item>
+    
     <item>
       <title>Advanced SMS Phishing</title>
       <link>https://w3slee.github.io/posts/advanced-sms-phishing/</link>
